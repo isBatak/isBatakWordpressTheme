@@ -1,10 +1,11 @@
 require.config({
-	"baseUrl": "content/themes/batak/js",
+	"baseUrl": "content/themes/batak/lib",
 	"paths": {
-		"jquery": "vendor/jquery/jquery"
+		"jquery": "/jquery/jquery",
+		"bootstrap": "/bootstrap-sass-official/assets/javascripts/bootstrap"
 	}
 });
 
-require(['jquery'], function($) {
+require(['jquery', 'bootstrap'], function($) {
 	console.log('Working!!');
 });

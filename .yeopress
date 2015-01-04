@@ -1,0 +1,21 @@
+{
+	"wpVer": "4.0",
+	"url": "http://batak.local",
+	"tablePrefix": "btk_",
+	"dbHost": "localhost",
+	"dbName": "batak",
+	"dbUser": "root",
+	"dbPass": "",
+	"git": true,
+	"submodule": true,
+	"wpDir": "cms",
+	"contentDir": "content",
+	"installTheme": true,
+	"themeDir": "batak",
+	"themeType": "git",
+	"themeUser": "wesleytodd",
+	"themeRepo": "YeoPress",
+	"themeBranch": "template",
+	"customDirs": true,
+	"saltKeys": "define('AUTH_KEY',         'Ds7WufJsS=; c86}rfIjh5z9U<Q`soJ/SQO(GU%cW#&zd89+mgJNOh#,QqHb^!:f');\ndefine('SECURE_AUTH_KEY',  'Z^([-1YzUJTp`Ow)i5i4d|ny9,NDKVM~K6r=l9k64ZQl_lARd|VDG)i$ih|Jn@xv');\ndefine('LOGGED_IN_KEY',    'SR-E^Yp{6K9B=`lz&$`:-PPN0W`0MASIj8Fodn+yqZi))/Se/gm3eGy{N/Wj8Q@|');\ndefine('NONCE_KEY',        '-DmCag@pOhkncmZ|?oSt3eqA.|`}^+f|6[qws[dw?Z^Tbp+Xdg77M{2}7+[Dn4]|');\ndefine('AUTH_SALT',        '-88a:=/6:_;vB<U|n.z-@+IK*+Nh1hrY<D(L;-Q`nqA@v|!ij/Yw50t1}am&l~sY');\ndefine('SECURE_AUTH_SALT', '-Mc-zV$Q@DK,jpD.#)n?DOu^jLk-mx~Yk5+@O0raD*~2hTT7s3LU{0ag@*rQ]7uN');\ndefine('LOGGED_IN_SALT',   'e f@j}k$lD$+2C>J4/H,D`b2/woDNrfg^)X:HfwH0P@&SA/pw`mUfNNb^-gIj1N3');\ndefine('NONCE_SALT',       'vpQt<~XVLSk5VnoZAgt8YMLQo~4=esCoa|~hpn9rdHk;&%jh-;qi-49dv!YlY5%y');\n"
+}

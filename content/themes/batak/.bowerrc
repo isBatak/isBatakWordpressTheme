@@ -1,3 +1,4 @@
 {
-  "directory": "js/vendor"
+  "directory": "lib",
+  "analytics": false
 }
