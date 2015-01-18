@@ -52,3 +52,10 @@ function register_widgets(){
 
 }//end register_widgets()
 add_action( 'widgets_init', 'register_widgets' );
+
+define( 'BATAK_PARENT_DIR', get_template_directory() );
+define( 'BATAK_INC_DIR', BATAK_PARENT_DIR. '/inc' );
+define( 'BATAK_FUNCTIONS_DIR', BATAK_INC_DIR . '/functions' );
+
+/** Load functions */
+require_once( BATAK_FUNCTIONS_DIR . '/functions.php' );
