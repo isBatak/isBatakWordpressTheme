@@ -21,6 +21,19 @@ if ( ! function_exists( 'create_portfolio_post_type' ) )
                 "menu_icon" => "dashicons-format-gallery",
                 "rewrite" => array(
                     "slug" => "portfolio"
+                ),
+                "supports" => array(
+                    'title',
+                    'editor',
+                    'author',
+                    'thumbnail',
+                    //'excerpt',
+                    //'trackbacks',
+                    //'custom-fields',
+                    'comments',
+                    'revisions',
+                    'page-attributes',
+                    'post-formats'
                 )
             )
         );
