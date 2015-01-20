@@ -1,3 +1,4 @@
+'use strict';
 module.exports = function (grunt) {
 
     // To support SASS/SCSS or Stylus, just install
@@ -12,6 +13,11 @@ module.exports = function (grunt) {
     var hasStylus = npmDependencies['grunt-contrib-stylus'] !== undefined;
 
     grunt.initConfig({
+        // Dirs
+        dirs: {
+            bower: 'lib',
+            libs: 'js/libs'
+        },
         // Watches for changes and runs tasks
         watch: {
             sass: {
@@ -138,6 +144,55 @@ module.exports = function (grunt) {
                 }
             }
         },
+        // Copy js files to libs folder
+        copy: {
+            dev: {
+                files: [
+                    {
+                        expand: true,
+                        src: ['<%= dirs.bower %>/bootstrap-sass-official/assets/javascripts/bootstrap.js'],
+                        flatten: true,
+                        dest: '<%= dirs.libs %>/bootstrap/',
+                        filter: 'isFile'
+                    },
+                    {
+                        expand: true,
+                        src: ['<%= dirs.bower %>/html5shiv/dist/html5shiv.js'],
+                        flatten: true,
+                        dest: '<%= dirs.libs %>/html5shiv/',
+                        filter: 'isFile'
+                    },
+                    {
+                        expand: true,
+                        src: ['<%= dirs.bower %>/jquery/jquery.js'],
+                        flatten: true,
+                        dest: '<%= dirs.libs %>/jquery/',
+                        filter: 'isFile'
+                    },
+                    {
+                        expand: true,
+                        src: ['<%= dirs.bower %>/requirejs/require.js'],
+                        flatten: true,
+                        dest: '<%= dirs.libs %>/requirejs/',
+                        filter: 'isFile'
+                    },
+                    {
+                        expand: true,
+                        src: ['<%= dirs.bower %>/respond/src/respond.js'],
+                        flatten: true,
+                        dest: '<%= dirs.libs %>/respond/',
+                        filter: 'isFile'
+                    },
+                ],
+            },
+        },
+        // Clean dir
+        clean: {
+            options: {
+                force: true,
+            },
+            src: ["js/libs"],
+        },
         // Image min
         imagemin: {
             production: {
@@ -211,7 +266,10 @@ module.exports = function (grunt) {
         grunt.loadNpmTasks('grunt-contrib-stylus');
     }
 
+    grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-bower-requirejs');
     grunt.loadNpmTasks('grunt-contrib-requirejs');
@@ -232,4 +290,6 @@ module.exports = function (grunt) {
         });
     });
 
+    // copy dependencies to js/libs folder
+    grunt.registerTask('dev-copy', ['clean','copy:dev']);
 };

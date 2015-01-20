@@ -1,5 +1,5 @@
 {
-  "name": "Bazak-Template",
+  "name": "Batak-Template",
   "version": "0.0.1",
   "description": "My wordpress template.",
   "scripts": {
@@ -15,6 +15,9 @@
     "bower": "~0.8.6",
     "grunt": "~0.4.1",
     "grunt-bower-requirejs": "~0.4.1",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-copy": "^0.7.0",
     "grunt-contrib-imagemin": "~0.1.4",
     "grunt-contrib-jshint": "~0.1.1",
     "grunt-contrib-requirejs": "~0.4.0",
