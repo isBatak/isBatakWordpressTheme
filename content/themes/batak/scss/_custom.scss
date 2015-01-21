@@ -2,6 +2,12 @@
 $color_mercury_approx: #e7e7e7;
 $color_desert_storm_approx: #f8f8f8;
 $color_concrete_approx: #f3f3f3;
+$gray_normal: #232323;
+$gray_highlight: #2c2c2c;
+$orange: #e76203;
+
+//vars
+$width: 200px;
 
 :focus {
 	outline: none;
@@ -12,9 +18,9 @@ $color_concrete_approx: #f3f3f3;
 }
 .side-menu {
 	position: fixed;
-	width: 300px;
+	width: $width;
 	height: 100%;
-	background-color: $color_desert_storm_approx;
+	background-color: $gray_normal;
 	border-right: 1px solid $color_mercury_approx;
 	.navbar {
 		border: none;
@@ -38,7 +44,7 @@ $color_concrete_approx: #f3f3f3;
 		.active a {
 			background-color: transparent;
 			margin-right: -1px;
-			border-right: 5px solid $color_mercury_approx;
+			border-right: 5px solid $orange;
 		}
 	}
 	#dropdown {
@@ -143,7 +149,7 @@ $color_concrete_approx: #f3f3f3;
 	}
 }
 .side-body {
-	margin-left: 310px;
+	margin-left: $width + 10px;
 }
 @media (max-width: 768px) {
 	.side-menu {
@@ -158,7 +164,7 @@ $color_concrete_approx: #f3f3f3;
 	}
 	@-moz-keyframes slidein {
 		0% {
-			left: -300px;
+			left: -$width;
 		}
 		100% {
 			left: 10px;
@@ -166,7 +172,7 @@ $color_concrete_approx: #f3f3f3;
 	}
 	@-webkit-keyframes slidein {
 		0% {
-			left: -300px;
+			left: -$width;
 		}
 		100% {
 			left: 10px;
@@ -174,7 +180,7 @@ $color_concrete_approx: #f3f3f3;
 	}
 	@keyframes slidein {
 		0% {
-			left: -300px;
+			left: -$width;
 		}
 		100% {
 			left: 10px;
@@ -185,7 +191,7 @@ $color_concrete_approx: #f3f3f3;
 			left: 0;
 		}
 		100% {
-			left: -300px;
+			left: -$width;
 		}
 	}
 	@-webkit-keyframes slideout {
@@ -193,7 +199,7 @@ $color_concrete_approx: #f3f3f3;
 			left: 0;
 		}
 		100% {
-			left: -300px;
+			left: -$width;
 		}
 	}
 	@keyframes slideout {
@@ -201,7 +207,7 @@ $color_concrete_approx: #f3f3f3;
 			left: 0;
 		}
 		100% {
-			left: -300px;
+			left: -$width;
 		}
 	}
 	@-moz-keyframes bodyslidein {
@@ -209,7 +215,7 @@ $color_concrete_approx: #f3f3f3;
 			left: 0;
 		}
 		100% {
-			left: 300px;
+			left: $width;
 		}
 	}
 	@-webkit-keyframes bodyslidein {
@@ -217,7 +223,7 @@ $color_concrete_approx: #f3f3f3;
 			left: 0;
 		}
 		100% {
-			left: 300px;
+			left: $width;
 		}
 	}
 	@keyframes bodyslidein {
@@ -225,12 +231,12 @@ $color_concrete_approx: #f3f3f3;
 			left: 0;
 		}
 		100% {
-			left: 300px;
+			left: $width;
 		}
 	}
 	@-moz-keyframes bodyslideout {
 		0% {
-			left: 300px;
+			left: $width;
 		}
 		100% {
 			left: 0;
@@ -238,7 +244,7 @@ $color_concrete_approx: #f3f3f3;
 	}
 	@-webkit-keyframes bodyslideout {
 		0% {
-			left: 300px;
+			left: $width;
 		}
 		100% {
 			left: 0;

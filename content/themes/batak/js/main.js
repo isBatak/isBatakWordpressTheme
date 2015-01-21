@@ -1,14 +1,19 @@
 require.config({
-	baseUrl: "../js/libs",
+	baseUrl: "../js",
 	paths: {
-		jquery: "jquery\\jquery",
-		bootstrap: "bootstrap\\bootstrap",
-		html5shiv: "html5shiv\\html5shiv"
-	}
+		jquery: "libs\\jquery\\jquery",
+		bootstrap: "libs\\bootstrap\\bootstrap",
+	},
+	shim: {
+		"bootstrap": {
+			deps: ["jquery"],
+			exports: "$.fn.popover"
+		}
+	},
+	enforceDefine: true
 });
 
 require(['jquery', 'bootstrap'], function($) {
-	console.log('Working!!');
 
 	$(function () {
 		$('.navbar-toggle').click(function () {
