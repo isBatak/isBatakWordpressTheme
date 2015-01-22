@@ -183,6 +183,12 @@ module.exports = function (grunt) {
                         dest: '<%= dirs.libs %>/respond/',
                         filter: 'isFile'
                     },
+                    {
+                        expand: true,
+                        src: ['<%= dirs.bower %>bootstrap-sass-official/assets/fonts'],
+                        flatten: true,
+                        dest: 'fonts'
+                    },
                 ],
             },
         },
