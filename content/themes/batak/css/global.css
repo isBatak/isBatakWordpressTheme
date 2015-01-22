@@ -7129,19 +7129,18 @@ button.close {
   width: 200px;
   height: 100%;
   background-color: #232323;
-  border-right: 1px solid #e7e7e7;
 }
 .side-menu .navbar {
   border: none;
+  background-color: #232323;
 }
 .side-menu .navbar-header {
   width: 100%;
-  border-bottom: 1px solid #e7e7e7;
 }
 .side-menu .navbar-nav li {
   display: block;
   width: 100%;
-  border-bottom: 1px solid #e7e7e7;
+  border-bottom: 1px solid #232323;
 }
 .side-menu .navbar-nav li a {
   padding: 15px;
@@ -7151,7 +7150,6 @@ button.close {
 }
 .side-menu .navbar-nav .active a {
   background-color: transparent;
-  margin-right: -1px;
   border-right: 5px solid #e76203;
 }
 .side-menu #dropdown {
