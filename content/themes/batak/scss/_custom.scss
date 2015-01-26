@@ -147,7 +147,7 @@ $width: 200px;
 	}
 }
 .side-body {
-	margin-left: $width + 10px;
+	margin-left: $width;
 }
 @media (max-width: 768px) {
 	.side-menu {
@@ -250,7 +250,7 @@ $width: 200px;
 	}
 	@keyframes bodyslideout {
 		0% {
-			left: 300px;
+			left: $width;
 		}
 		100% {
 			left: 0;
@@ -286,6 +286,17 @@ $width: 200px;
 	.side-menu-container > .navbar-nav.slide-in {
 		animation: slidein 300ms forwards;
 		//Instead of the line below you could use @includetransform-style($style)
+		transform-style: preserve-3d;
+	}
+	.side-menu-container > .navbar-nav {
+		position: fixed;
+		left: -300px;
+		width: $width;
+		top: 43px;
+		height: 100%;
+		border-right: 1px solid #e7e7e7;
+		background-color: #f8f8f8;
+		animation: slideout 300ms forwards;
 		transform-style: preserve-3d;
 	}
 	#search .panel-body .navbar-form {

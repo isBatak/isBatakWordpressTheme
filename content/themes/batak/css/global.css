@@ -7248,7 +7248,7 @@ button.close {
 }
 
 .side-body {
-  margin-left: 210px;
+  margin-left: 200px;
 }
 
 @media (max-width: 768px) {
@@ -7353,7 +7353,7 @@ button.close {
   }
   @keyframes bodyslideout {
     0% {
-      left: 300px;
+      left: 200px;
     }
     100% {
       left: 0;
@@ -7389,6 +7389,18 @@ button.close {
 
   .side-menu-container > .navbar-nav.slide-in {
     animation: slidein 300ms forwards;
+    transform-style: preserve-3d;
+  }
+
+  .side-menu-container > .navbar-nav {
+    position: fixed;
+    left: -300px;
+    width: 200px;
+    top: 43px;
+    height: 100%;
+    border-right: 1px solid #e7e7e7;
+    background-color: #f8f8f8;
+    animation: slideout 300ms forwards;
     transform-style: preserve-3d;
   }
 
