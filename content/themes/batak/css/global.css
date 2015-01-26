@@ -7119,11 +7119,6 @@ button.close {
   outline: none;
 }
 
-.row {
-  margin-right: 0;
-  margin-left: 0;
-}
-
 .side-menu {
   position: fixed;
   width: 200px;
@@ -7263,6 +7258,14 @@ button.close {
     display: inline-block;
   }
 
+  @-webkit-keyframes slidein {
+    0% {
+      left: -200px;
+    }
+    100% {
+      left: 10px;
+    }
+  }
   @-moz-keyframes slidein {
     0% {
       left: -200px;
@@ -7271,7 +7274,15 @@ button.close {
       left: 10px;
     }
   }
-  @-webkit-keyframes slidein {
+  @-ms-keyframes slidein {
+    0% {
+      left: -200px;
+    }
+    100% {
+      left: 10px;
+    }
+  }
+  @-o-keyframes slidein {
     0% {
       left: -200px;
     }
@@ -7287,6 +7298,14 @@ button.close {
       left: 10px;
     }
   }
+  @-webkit-keyframes slideout {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -200px;
+    }
+  }
   @-moz-keyframes slideout {
     0% {
       left: 0;
@@ -7295,7 +7314,15 @@ button.close {
       left: -200px;
     }
   }
-  @-webkit-keyframes slideout {
+  @-ms-keyframes slideout {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -200px;
+    }
+  }
+  @-o-keyframes slideout {
     0% {
       left: 0;
     }
@@ -7311,6 +7338,14 @@ button.close {
       left: -200px;
     }
   }
+  @-webkit-keyframes bodyslidein {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 200px;
+    }
+  }
   @-moz-keyframes bodyslidein {
     0% {
       left: 0;
@@ -7319,7 +7354,15 @@ button.close {
       left: 200px;
     }
   }
-  @-webkit-keyframes bodyslidein {
+  @-ms-keyframes bodyslidein {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 200px;
+    }
+  }
+  @-o-keyframes bodyslidein {
     0% {
       left: 0;
     }
@@ -7335,6 +7378,14 @@ button.close {
       left: 200px;
     }
   }
+  @-webkit-keyframes bodyslideout {
+    0% {
+      left: 200px;
+    }
+    100% {
+      left: 0;
+    }
+  }
   @-moz-keyframes bodyslideout {
     0% {
       left: 200px;
@@ -7343,7 +7394,15 @@ button.close {
       left: 0;
     }
   }
-  @-webkit-keyframes bodyslideout {
+  @-ms-keyframes bodyslideout {
+    0% {
+      left: 200px;
+    }
+    100% {
+      left: 0;
+    }
+  }
+  @-o-keyframes bodyslideout {
     0% {
       left: 200px;
     }
@@ -7363,12 +7422,20 @@ button.close {
     margin-left: 5px;
     margin-top: 70px;
     position: relative;
+    -moz-animation: bodyslideout 300ms forwards;
+    -o-animation: bodyslideout 300ms forwards;
+    -webkit-animation: bodyslideout 300ms forwards;
     animation: bodyslideout 300ms forwards;
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
   }
 
   .body-slide-in {
+    -moz-animation: bodyslidein 300ms forwards;
+    -o-animation: bodyslidein 300ms forwards;
+    -webkit-animation: bodyslidein 300ms forwards;
     animation: bodyslidein 300ms forwards;
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
   }
 
@@ -7388,19 +7455,27 @@ button.close {
   }
 
   .side-menu-container > .navbar-nav.slide-in {
+    -moz-animation: slidein 300ms forwards;
+    -o-animation: slidein 300ms forwards;
+    -webkit-animation: slidein 300ms forwards;
     animation: slidein 300ms forwards;
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
   }
 
   .side-menu-container > .navbar-nav {
     position: fixed;
-    left: -300px;
+    left: -200px;
     width: 200px;
     top: 43px;
     height: 100%;
     border-right: 1px solid #e7e7e7;
     background-color: #f8f8f8;
+    -moz-animation: slideout 300ms forwards;
+    -o-animation: slideout 300ms forwards;
+    -webkit-animation: slideout 300ms forwards;
     animation: slideout 300ms forwards;
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
   }
 

@@ -8,13 +8,10 @@ $orange: #e76203;
 
 //vars
 $width: 200px;
+$duration: 300ms;
 
 :focus {
 	outline: none;
-}
-.row {
-	margin-right: 0;
-	margin-left: 0;
 }
 .side-menu {
 	position: fixed;
@@ -160,113 +157,37 @@ $width: 200px;
 			display: inline-block;
 		}
 	}
-	@-moz-keyframes slidein {
-		0% {
-			left: -$width;
-		}
-		100% {
-			left: 10px;
-		}
+	@include keyframes("slidein") {
+		0% { left: -$width; }
+		100% { left: 10px; }
 	}
-	@-webkit-keyframes slidein {
-		0% {
-			left: -$width;
-		}
-		100% {
-			left: 10px;
-		}
+
+	@include keyframes(slideout) {
+		0% { left: 0; }
+		100% { left: -$width; }
 	}
-	@keyframes slidein {
-		0% {
-			left: -$width;
-		}
-		100% {
-			left: 10px;
-		}
+
+	@include keyframes(bodyslidein) {
+		0% { left: 0; }
+		100% { left: $width; }
 	}
-	@-moz-keyframes slideout {
-		0% {
-			left: 0;
-		}
-		100% {
-			left: -$width;
-		}
+
+	@include keyframes(bodyslideout) {
+		0% { left: $width; }
+		100% { left: 0; }
 	}
-	@-webkit-keyframes slideout {
-		0% {
-			left: 0;
-		}
-		100% {
-			left: -$width;
-		}
-	}
-	@keyframes slideout {
-		0% {
-			left: 0;
-		}
-		100% {
-			left: -$width;
-		}
-	}
-	@-moz-keyframes bodyslidein {
-		0% {
-			left: 0;
-		}
-		100% {
-			left: $width;
-		}
-	}
-	@-webkit-keyframes bodyslidein {
-		0% {
-			left: 0;
-		}
-		100% {
-			left: $width;
-		}
-	}
-	@keyframes bodyslidein {
-		0% {
-			left: 0;
-		}
-		100% {
-			left: $width;
-		}
-	}
-	@-moz-keyframes bodyslideout {
-		0% {
-			left: $width;
-		}
-		100% {
-			left: 0;
-		}
-	}
-	@-webkit-keyframes bodyslideout {
-		0% {
-			left: $width;
-		}
-		100% {
-			left: 0;
-		}
-	}
-	@keyframes bodyslideout {
-		0% {
-			left: $width;
-		}
-		100% {
-			left: 0;
-		}
-	}
+
 	.side-body {
 		margin-left: 5px;
 		margin-top: 70px;
 		position: relative;
-		animation: bodyslideout 300ms forwards;
-		//Instead of the line below you could use @includetransform-style($style)
+		@include animation(bodyslideout $duration forwards);
+		-webkit-transform-style: preserve-3d;
 		transform-style: preserve-3d;
 	}
 	.body-slide-in {
-		animation: bodyslidein 300ms forwards;
-		//Instead of the line below you could use @includetransform-style($style)
+		@include animation(bodyslidein $duration forwards);
+		-webkit-transform-style: preserve-3d;
 		transform-style: preserve-3d;
 	}
 	.navbar-toggle {
@@ -274,7 +195,6 @@ $width: 200px;
 		float: left;
 		padding: 18px;
 		margin: 0;
-		//Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
 		border-radius: 0;
 		background-color: $color_concrete_approx;
 	}
@@ -283,20 +203,22 @@ $width: 200px;
 		z-index: 3;
 		background-color: $color_desert_storm_approx;
 	}
+
 	.side-menu-container > .navbar-nav.slide-in {
-		animation: slidein 300ms forwards;
-		//Instead of the line below you could use @includetransform-style($style)
+		@include animation(slidein $duration forwards);
+		-webkit-transform-style: preserve-3d;
 		transform-style: preserve-3d;
 	}
 	.side-menu-container > .navbar-nav {
 		position: fixed;
-		left: -300px;
+		left: -$width;
 		width: $width;
 		top: 43px;
 		height: 100%;
 		border-right: 1px solid #e7e7e7;
 		background-color: #f8f8f8;
-		animation: slideout 300ms forwards;
+		@include animation(slideout $duration forwards);
+		-webkit-transform-style: preserve-3d;
 		transform-style: preserve-3d;
 	}
 	#search .panel-body .navbar-form {
