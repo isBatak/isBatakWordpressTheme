@@ -59,7 +59,6 @@ $duration: 300ms;
 		}
 		.panel-body {
 			padding: 0;
-			background-color: $color_concrete_approx;
 			.navbar-nav {
 				width: 100%;
 				li {
@@ -215,8 +214,6 @@ $duration: 300ms;
 		width: $width;
 		top: 43px;
 		height: 100%;
-		border-right: 1px solid #e7e7e7;
-		background-color: #f8f8f8;
 		@include animation(slideout $duration forwards);
 		-webkit-transform-style: preserve-3d;
 		transform-style: preserve-3d;
