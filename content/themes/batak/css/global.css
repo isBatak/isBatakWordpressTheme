@@ -7133,11 +7133,10 @@ button.close {
   position: fixed;
   width: 200px;
   height: 100%;
-  background-color: #232323;
 }
 .side-menu .navbar {
   border: none;
-  background-color: #232323;
+  margin-bottom: 0;
 }
 .side-menu .navbar-header {
   width: 100%;
@@ -7145,16 +7144,15 @@ button.close {
 .side-menu .navbar-nav li {
   display: block;
   width: 100%;
-  border-bottom: 1px solid #232323;
 }
 .side-menu .navbar-nav li a {
-  padding: 15px;
+  padding: 8px;
 }
 .side-menu .navbar-nav li a .glyphicon {
   padding-right: 10px;
 }
 .side-menu .navbar-nav .active a {
-  background-color: transparent;
+  background-color: #3d3d3d;
   border-right: 5px solid #e76203;
 }
 .side-menu #dropdown {
@@ -7173,35 +7171,30 @@ button.close {
 }
 .side-menu #dropdown .panel-body {
   padding: 0;
+  background-color: #161616;
 }
 .side-menu #dropdown .panel-body .navbar-nav {
   width: 100%;
 }
-.side-menu #dropdown .panel-body .navbar-nav li {
+.side-menu #dropdown .panel-body .navbar-nav li a {
   padding-left: 15px;
-  border-bottom: 1px solid #e7e7e7;
 }
 .side-menu #dropdown .panel-body .navbar-nav li:last-child {
   border-bottom: none;
 }
 .side-menu #dropdown .panel-body .panel-body {
   margin-left: -15px;
+  background-color: #0a0a0a;
 }
 .side-menu #dropdown .panel-body .panel-body li {
   padding-left: 30px;
-}
-.side-menu #dropdown .panel-body .panel-body li:last-child {
-  border-bottom: 1px solid #e7e7e7;
 }
 .side-menu #dropdown .panel-body .panel > a {
   margin-left: -20px;
   padding-left: 35px;
 }
-.side-menu #dropdown > a {
-  border-bottom: 1px solid #e7e7e7;
-}
 .side-menu #search-trigger {
-  background-color: #f3f3f3;
+  background-color: #232323;
   border: 0;
   border-radius: 0;
   position: absolute;
@@ -7228,7 +7221,7 @@ button.close {
   width: 100%;
   margin: 0;
   position: relative;
-  border-top: 1px solid #e7e7e7;
+  border-top: 1px solid #232323;
 }
 .side-menu #search .panel-body .navbar-form .form-group {
   width: 100%;
@@ -7247,7 +7240,6 @@ button.close {
   top: 0;
   border: 0;
   border-radius: 0;
-  background-color: #f3f3f3;
   padding: 15px 18px;
 }
 
@@ -7261,7 +7253,6 @@ button.close {
     width: 100%;
     height: 0;
     border-right: 0;
-    border-bottom: 1px solid #e7e7e7;
   }
   .side-menu .brand-name-wrapper .navbar-brand {
     display: inline-block;
@@ -7454,13 +7445,11 @@ button.close {
     padding: 18px;
     margin: 0;
     border-radius: 0;
-    background-color: #f3f3f3;
   }
 
-  .navbar-header {
+  .navbar-fixed-top-mobile {
     position: fixed;
-    z-index: 3;
-    background-color: #f8f8f8;
+    z-index: 1031;
   }
 
   .side-menu-container > .navbar-nav.slide-in {
@@ -7476,8 +7465,9 @@ button.close {
     position: fixed;
     left: -200px;
     width: 200px;
-    top: 43px;
+    top: 42px;
     height: 100%;
+    background-color: #232323;
     -moz-animation: slideout 300ms forwards;
     -o-animation: slideout 300ms forwards;
     -webkit-animation: slideout 300ms forwards;

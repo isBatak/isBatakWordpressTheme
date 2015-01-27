@@ -1,11 +1,3 @@
-//colors
-$color_mercury_approx: #e7e7e7;
-$color_desert_storm_approx: #f8f8f8;
-$color_concrete_approx: #f3f3f3;
-$gray_normal: #232323;
-$gray_highlight: #2c2c2c;
-$orange: #e76203;
-
 //vars
 $width: 200px;
 $duration: 300ms;
@@ -17,10 +9,9 @@ $duration: 300ms;
 	position: fixed;
 	width: $width;
 	height: 100%;
-	background-color: $gray_normal;
 	.navbar {
 		border: none;
-		background-color: $gray_normal;
+		margin-bottom: 0;
 	}
 	.navbar-header {
 		width: 100%;
@@ -29,17 +20,16 @@ $duration: 300ms;
 		li {
 			display: block;
 			width: 100%;
-			border-bottom: 1px solid $gray_normal;
 			a {
-				padding: 15px;
+				padding: 8px;
 				.glyphicon {
 					padding-right: 10px;
 				}
 			}
 		}
 		.active a {
-			background-color: transparent;
-			border-right: 5px solid $orange;
+			background-color: lighten($navbar-inverse-bg, 10%);
+			border-right: 5px solid $brand-primary;
 		}
 	}
 	#dropdown {
@@ -59,11 +49,13 @@ $duration: 300ms;
 		}
 		.panel-body {
 			padding: 0;
+			background-color: darken($navbar-inverse-bg, 5%);
 			.navbar-nav {
 				width: 100%;
 				li {
-					padding-left: 15px;
-					border-bottom: 1px solid $color_mercury_approx;
+					a{
+						padding-left: 15px;
+					}
 					&:last-child {
 						border-bottom: none;
 					}
@@ -71,11 +63,9 @@ $duration: 300ms;
 			}
 			.panel-body {
 				margin-left: -15px;
+				background-color: darken($navbar-inverse-bg, 10%);
 				li {
 					padding-left: 30px;
-					&:last-child {
-						border-bottom: 1px solid $color_mercury_approx;
-					}
 				}
 			}
 			.panel > a {
@@ -84,11 +74,11 @@ $duration: 300ms;
 			}
 		}
 		> a {
-			border-bottom: 1px solid $color_mercury_approx;
+			//border-bottom: 1px solid $color_mercury_approx;
 		}
 	}
 	#search-trigger {
-		background-color: $color_concrete_approx;
+		background-color: $navbar-inverse-bg;
 		border: 0;
 		//Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
 		border-radius: 0;
@@ -114,7 +104,7 @@ $duration: 300ms;
 				width: 100%;
 				margin: 0;
 				position: relative;
-				border-top: 1px solid $color_mercury_approx;
+				border-top: 1px solid $navbar-inverse-bg;
 				.form-group {
 					width: 100%;
 					position: relative;
@@ -135,7 +125,6 @@ $duration: 300ms;
 					border: 0;
 					//Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
 					border-radius: 0;
-					background-color: $color_concrete_approx;
 					padding: 15px 18px;
 				}
 			}
@@ -151,7 +140,6 @@ $duration: 300ms;
 		width: 100%;
 		height: 0;
 		border-right: 0;
-		border-bottom: 1px solid $color_mercury_approx;
 		.brand-name-wrapper .navbar-brand {
 			display: inline-block;
 		}
@@ -195,12 +183,10 @@ $duration: 300ms;
 		padding: 18px;
 		margin: 0;
 		border-radius: 0;
-		background-color: $color_concrete_approx;
 	}
-	.navbar-header {
+	.navbar-fixed-top-mobile {
 		position: fixed;
-		z-index: 3;
-		background-color: $color_desert_storm_approx;
+		z-index: 1031;
 	}
 
 	.side-menu-container > .navbar-nav.slide-in {
@@ -212,8 +198,9 @@ $duration: 300ms;
 		position: fixed;
 		left: -$width;
 		width: $width;
-		top: 43px;
+		top: 42px;
 		height: 100%;
+		background-color: $navbar-inverse-bg;
 		@include animation(slideout $duration forwards);
 		-webkit-transform-style: preserve-3d;
 		transform-style: preserve-3d;
