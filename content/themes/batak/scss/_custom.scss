@@ -1,9 +1,14 @@
 //vars
 $width: 200px;
+$navbar-side-height: 50px;
 $duration: 300ms;
 
 :focus {
 	outline: none;
+}
+.navbar-side{
+	width: $width;
+	height: $navbar-side-height;
 }
 .side-menu {
 	position: fixed;
@@ -135,6 +140,11 @@ $duration: 300ms;
 	margin-left: $width;
 }
 @media (max-width: 768px) {
+
+	.navbar-side{
+		width: 100%;
+	}
+
 	.side-menu {
 		position: relative;
 		width: 100%;

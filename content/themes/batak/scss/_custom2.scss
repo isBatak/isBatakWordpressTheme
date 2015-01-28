@@ -1,0 +1,127 @@
+//vars
+$width: 200px;
+$navbar-side-height: 50px;
+$duration: 300ms;
+
+:focus {
+	outline: none;
+}
+
+.side-menu {
+	position: fixed;
+	top: 0;
+	width: $width;
+	height: 100%;
+	background-color: $navbar-inverse-bg;
+	.navbar{
+		width: $width;
+		//height: $navbar-side-height * 2;
+		border: none;
+		margin-bottom: 0px;
+	}
+	.navbar-brand{
+		display: block;
+		width: 100%;
+		height: auto;
+		img{
+			margin: 0 auto;
+			height: 50px;
+		}
+	}
+}
+.side-menu-container > .navbar-nav {
+	width: $width;
+	height: 100%;
+	margin: 0;
+	li{
+		width: 100%;
+		a{
+			padding: 10px;
+			color: $navbar-default-color;
+		}
+	}
+}
+.side-body {
+	margin-left: $width;
+	.block{
+		background: $navbar-default-color;
+	}
+}
+
+
+@media (max-width: 768px) {
+	@include keyframes("slidein") {
+		0% { left: -$width; }
+		100% { left: 10px; }
+	}
+
+	@include keyframes(slideout) {
+		0% { left: 0; }
+		100% { left: -$width; }
+	}
+
+	@include keyframes(bodyslidein) {
+		0% { left: 0; }
+		100% { left: $width; }
+	}
+
+	@include keyframes(bodyslideout) {
+		0% { left: $width; }
+		100% { left: 0; }
+	}
+
+	.side-menu {
+		//position: relative;
+		//width: 100%;
+		//height: 0;
+		//border-right: 0;
+		.navbar{
+			position: fixed;
+			width: 100%;
+			height: $navbar-side-height;
+			@include animation(bodyslidein $duration forwards);
+		}
+		.navbar-brand{
+			height: $navbar-side-height;
+		}
+	}
+
+	.side-body {
+		margin-top: 70px;
+		position: relative;
+		@include animation(bodyslideout $duration forwards);
+		-webkit-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+	}
+	.body-slide-in {
+		@include animation(bodyslidein $duration forwards);
+		-webkit-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+	}
+	.navbar-toggle {
+		border: 0;
+		float: left;
+		padding: 18px;
+		margin: 0;
+		border-radius: 0;
+	}
+	.navbar-fixed-top-mobile {
+		position: fixed;
+		z-index: 1031;
+	}
+
+	.side-menu-container > .navbar-nav.slide-in {
+		//@include animation(slidein $duration forwards);
+		-webkit-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+	}
+	#search .panel-body .navbar-form {
+		border-bottom: 0;
+		.form-group {
+			margin: 0;
+		}
+	}
+	#dropdown .panel-body .navbar-nav {
+		margin: 0;
+	}
+}
