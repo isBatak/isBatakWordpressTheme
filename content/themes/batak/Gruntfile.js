@@ -185,7 +185,7 @@ module.exports = function (grunt) {
                     },
                     {
                         expand: true,
-                        src: ['<%= dirs.bower %>bootstrap-sass-official/assets/fonts'],
+                        src: ['<%= dirs.bower %>bootstrap-sass-official/assets/fonts/bootstrap'],
                         flatten: true,
                         dest: 'fonts'
                     },
