@@ -37,10 +37,12 @@ $duration: 300ms;
 				padding: 10px;
 				color: $navbar-default-color;
 				text-align: center;
+				@include transition(all, .2s, ease-in);
 			}
 			a:hover,
 			a:focus{
-				background: lighten($navbar-inverse-bg, 10%);
+				background: transparent;
+				color: $brand-primary;
 			}
 		}
 		.active a {
@@ -69,56 +71,14 @@ $duration: 300ms;
 			background-color: darken($navbar-inverse-bg, 5%);
 		}
 	}
-	// #dropdown {
-	// 	border: 0;
-	// 	margin-bottom: 0;
-	// 	//Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
-	// 	border-radius: 0;
-	// 	background-color: transparent;
-	// 	//Instead of the line below you could use @includebox-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-	// 	box-shadow: none;
-	// 	.caret {
-	//
-	// 		//margin: 9px 5px 0;
-	// 	}
-	// 	.indicator {
-	// 		float: right;
-	// 	}
-	// 	.panel-body {
-	// 		padding: 0;
-	// 		background-color: darken($navbar-inverse-bg, 5%);
-	// 		.navbar-nav {
-	// 			width: 100%;
-	// 			li {
-	// 				a{
-	// 					padding-left: 15px;
-	// 				}
-	// 				&:last-child {
-	// 					border-bottom: none;
-	// 				}
-	// 			}
-	// 		}
-	// 		.panel-body {
-	// 			margin-left: -15px;
-	// 			background-color: darken($navbar-inverse-bg, 10%);
-	// 			li {
-	// 				padding-left: 30px;
-	// 			}
-	// 		}
-	// 		.panel > a {
-	// 			margin-left: -20px;
-	// 			padding-left: 35px;
-	// 		}
-	// 	}
-	// 	> a {
-	// 		//border-bottom: 1px solid $color_mercury_approx;
-	// 	}
-	// }
 }
 .side-body {
 	margin-left: $width;
 	.block{
 		background: $navbar-default-color;
+		img{
+			width: 100%;
+		}
 	}
 }
 
