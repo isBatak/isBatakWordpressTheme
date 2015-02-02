@@ -1,225 +1,236 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href="../css/global.css" rel="stylesheet">
+    <link href="../css/global.css" rel="stylesheet">
 
-        <!--[if lt IE 9]>
-            <script src="../js/libs/html5shiv/html5shiv.js"></script>
-            <script src="../js/libs/respond/respond.js"></script>
-        <![endif]-->
-    </head>
-    <body>
-            <!-- Menu -->
-            <div class="side-menu">
+    <!--[if lt IE 9]>
+        <script src="../js/libs/html5shiv/html5shiv.js"></script>
+        <script src="../js/libs/respond/respond.js"></script>
+    <![endif]-->
+</head>
+<body>
 
-                <nav class="navbar navbar-inverse" role="navigation">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar navbar-header navbar-fixed-top-mobile">
-                        <div class="brand-wrapper">
-                            <!-- Hamburger -->
-                            <button type="button" class="navbar-toggle">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
+    <!-- Menu -->
+    <div class="side-menu">
+        <nav class="navbar navbar-inverse">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.jpg"/>
+            </a>
+        </nav>
 
-                            <!-- Brand -->
-                            <div class="brand-name-wrapper">
-                                <a class="navbar-brand" href="#">
-                                    Brand
-                                </a>
-                            </div>
+        <!-- Profile picture -->
+        <div class="profile-picture-container">
+            <img src="images/profile_picture.jpg"/>
+        </div>
 
-                            <!-- Search -->
-                            <a data-toggle="collapse" href="#search" class="btn btn-default" id="search-trigger">
-                                <span class="glyphicon glyphicon-search"></span>
-                            </a>
+        <!-- Main Menu -->
+        <ul class="nav">
 
-                            <!-- Search body -->
-                            <div id="search" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    <form class="navbar-form" role="search">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Search">
-                                        </div>
-                                        <button type="submit" class="btn btn-default "><span class="glyphicon glyphicon-ok"></span></button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+            <li class="active"><a href="./index.html">Home</a></li>
+            <li><a href="./typography.html">Typography</a></li>
+            <li><a href="./miscellaneous.html">Miscellaneous</a></li>
 
-                    </div>
+            <!-- Dropdown-->
+            <li class="panel" id="dropdown">
+                <a data-toggle="collapse" href="#dropdown-lvl1">
+                    Blog Templates <span class="caret"></span>
+                </a>
 
-
-                    <!-- Main Menu -->
-                    <div class="side-menu-container">
-
-                        <img src="images/profile_picture.jpg"/>
-
+                <!-- Dropdown level 1 -->
+                <div id="dropdown-lvl1" class="panel-collapse collapse">
+                    <div class="panel-body">
                         <ul class="nav navbar-nav">
+                            <li><a href="./blog-sidebar.html">Blog Sidebar</a></li>
 
-                            <li class="active"><a href="#"><span class="glyphicon glyphicon-send"></span> Link</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-plane"></span> Active Link</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-cloud"></span> Link</a></li>
-
-                            <!-- Dropdown-->
-                            <li class="panel panel-default" id="dropdown">
-                                <a data-toggle="collapse" href="#dropdown-lvl1">
-                                    <span class="glyphicon glyphicon-user"></span> Sub Level <span class="caret"></span>
+                            <!-- Dropdown level 2 -->
+                            <li class="panel" id="dropdown">
+                                <a data-toggle="collapse" href="#dropdown-lvl2">
+                                    Blog Masonary <span class="caret"></span>
                                 </a>
-
-                                <!-- Dropdown level 1 -->
-                                <div id="dropdown-lvl1" class="panel-collapse collapse">
+                                <div id="dropdown-lvl2" class="panel-collapse collapse">
                                     <div class="panel-body">
                                         <ul class="nav navbar-nav">
-                                            <li><a href="#">Link</a></li>
-                                            <li><a href="#">Link</a></li>
-                                            <li><a href="#">Link</a></li>
-
-                                            <!-- Dropdown level 2 -->
-                                            <li class="panel panel-default" id="dropdown">
-                                                <a data-toggle="collapse" href="#dropdown-lvl2">
-                                                    <span class="glyphicon glyphicon-off"></span> Sub Level <span class="caret"></span>
-                                                </a>
-                                                <div id="dropdown-lvl2" class="panel-collapse collapse">
-                                                    <div class="panel-body">
-                                                        <ul class="nav navbar-nav">
-                                                            <li><a href="#">Link</a></li>
-                                                            <li><a href="#">Link</a></li>
-                                                            <li><a href="#">Link</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </li>
+                                            <li><a href="./blog-masonary-vertical.html">Blog Masonary Vertical</a></li>
+                                            <li><a href="./blog-masonary-horizontal.html">Blog Masonary Horizontal</a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </li>
-
-                            <li><a href="#"><span class="glyphicon glyphicon-signal"></span> Link</a></li>
-
                         </ul>
-                    </div><!-- /.navbar-collapse -->
-                </nav>
+                    </div>
+                </div>
+            </li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="http://scotch.io" target="_blank">Link</a></li>
+        </ul>
+    </div>
 
-            </div>
+    <!-- Main Content -->
+    <div class="container-fluid side-body">
+        <!-- Navbar
+        ================================================== -->
 
-            <!-- Main Content -->
-            <div class="container-fluid side-body">
-                <!-- Navbar
-                ================================================== -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="page-header">
+                    <h1 id="navbar">Navbar</h1>
+                </div>
 
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="page-header">
-                            <h1 id="navbar">Navbar</h1>
+                <div class="bs-component">
+                    <div class="navbar navbar-default">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">Brand</a>
                         </div>
-
-                        <div class="bs-component">
-                            <div class="navbar navbar-default">
-                                <div class="navbar-header">
-                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                    </button>
-                                    <a class="navbar-brand" href="#">Brand</a>
-                                </div>
-                                <div class="navbar-collapse collapse navbar-responsive-collapse">
-                                    <ul class="nav navbar-nav">
-                                        <li class="active"><a href="#">Active</a></li>
-                                        <li><a href="#">Link</a></li>
-                                        <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="#">Action</a></li>
-                                                <li><a href="#">Another action</a></li>
-                                                <li><a href="#">Something else here</a></li>
-                                                <li class="divider"></li>
-                                                <li class="dropdown-header">Dropdown header</li>
-                                                <li><a href="#">Separated link</a></li>
-                                                <li><a href="#">One more separated link</a></li>
-                                            </ul>
-                                        </li>
+                        <div class="navbar-collapse collapse navbar-responsive-collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">Active</a></li>
+                                <li><a href="#">Link</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li class="dropdown-header">Dropdown header</li>
+                                        <li><a href="#">Separated link</a></li>
+                                        <li><a href="#">One more separated link</a></li>
                                     </ul>
-                                    <form class="navbar-form navbar-left">
-                                        <input type="text" class="form-control col-lg-8" placeholder="Search">
-                                    </form>
-                                    <ul class="nav navbar-nav navbar-right">
-                                        <li><a href="#">Link</a></li>
-                                        <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="#">Action</a></li>
-                                                <li><a href="#">Another action</a></li>
-                                                <li><a href="#">Something else here</a></li>
-                                                <li class="divider"></li>
-                                                <li><a href="#">Separated link</a></li>
-                                            </ul>
-                                        </li>
+                                </li>
+                            </ul>
+                            <form class="navbar-form navbar-left">
+                                <input type="text" class="form-control col-lg-8" placeholder="Search">
+                            </form>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#">Link</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
                                     </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="bs-component">
-                            <div class="navbar navbar-inverse">
-                                <div class="navbar-header">
-                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                    </button>
-                                    <a class="navbar-brand" href="#">Brand</a>
-                                </div>
-                                <div class="navbar-collapse collapse navbar-inverse-collapse">
-                                    <ul class="nav navbar-nav">
-                                        <li class="active"><a href="#">Active</a></li>
-                                        <li><a href="#">Link</a></li>
-                                        <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="#">Action</a></li>
-                                                <li><a href="#">Another action</a></li>
-                                                <li><a href="#">Something else here</a></li>
-                                                <li class="divider"></li>
-                                                <li class="dropdown-header">Dropdown header</li>
-                                                <li><a href="#">Separated link</a></li>
-                                                <li><a href="#">One more separated link</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                    <form class="navbar-form navbar-left">
-                                        <input type="text" class="form-control col-lg-8" placeholder="Search">
-                                    </form>
-                                    <ul class="nav navbar-nav navbar-right">
-                                        <li><a href="#">Link</a></li>
-                                        <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="#">Action</a></li>
-                                                <li><a href="#">Another action</a></li>
-                                                <li><a href="#">Something else here</a></li>
-                                                <li class="divider"></li>
-                                                <li><a href="#">Separated link</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div id="source-button" class="btn btn-primary btn-xs" style="display: none;">&lt; &gt;</div></div>
-
+                                </li>
+                            </ul>
                         </div>
                     </div>
+                </div>
+
+                <div class="bs-component">
+                    <div class="navbar navbar-inverse">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">Brand</a>
+                        </div>
+                        <div class="navbar-collapse collapse navbar-inverse-collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">Active</a></li>
+                                <li><a href="#">Link</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li class="dropdown-header">Dropdown header</li>
+                                        <li><a href="#">Separated link</a></li>
+                                        <li><a href="#">One more separated link</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <form class="navbar-form navbar-left">
+                                <input type="text" class="form-control col-lg-8" placeholder="Search">
+                            </form>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#">Link</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="source-button" class="btn btn-primary btn-xs" style="display: none;">&lt; &gt;</div>
+                </div>
+
             </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <div class="b-panel">
+                    <div class="view">
+                        <img src="images/orange.jpg" />
+                    </div>
+                    <div class="b-panel-body">
+                        <h2 class="b-panel-title"><a href="#">Test</a></h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Aliquam quis odio porttitor, consequat quam sit amet, posuere
+                            ante. Nam eget lacus purus. Ut auctor mauris sit amet magna
+                            semper volutpat. Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit.
+                        </p>
+                    </div>
+                    <div class="b-panel-footer">
+                        footer
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <div class="b-panel">
+                    <div class="view">
+                        <img src="images/user.jpg" />
+                    </div>
+                    <div class="b-panel-body">
+                        test
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <div class="b-panel">
+                    <div class="view">
+                        <img src="images/pc.jpg" />
+                    </div>
+                    <div class="b-panel-body">
+                        test
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-        <script src="../js/libs/requirejs/require.js"></script>
-        <script src="../js/main.js"></script>
-    </body>
+    <script src="../js/libs/requirejs/require.js"></script>
+    <script src="../js/main.js"></script>
+</body>
 </html>
