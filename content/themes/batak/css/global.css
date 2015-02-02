@@ -1384,7 +1384,7 @@ body {
   font-size: 14px;
   line-height: 1.42857;
   color: #333;
-  background-color: #ddd;
+  background-color: #F1F1F1;
 }
 
 input,
@@ -1431,7 +1431,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.42857;
-  background-color: #ddd;
+  background-color: #F1F1F1;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -2848,7 +2848,7 @@ th {
   border-top: 2px solid #ddd;
 }
 .table .table {
-  background-color: #ddd;
+  background-color: #F1F1F1;
 }
 
 .table-condensed > thead > tr > th,
@@ -4419,7 +4419,7 @@ tbody.collapse.in {
 }
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
   color: #777;
-  background-color: #ddd;
+  background-color: #F1F1F1;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -4495,7 +4495,7 @@ tbody.collapse.in {
   .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus,
   .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #ddd;
+    border-bottom-color: #F1F1F1;
   }
 }
 
@@ -5353,7 +5353,7 @@ a.badge:hover, a.badge:focus {
   padding: 4px;
   margin-bottom: 20px;
   line-height: 1.42857;
-  background-color: #ddd;
+  background-color: #F1F1F1;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: border 0.2s ease-in-out;
@@ -7198,12 +7198,6 @@ button.close {
 .side-body {
   margin-left: 200px;
 }
-.side-body .block {
-  background: #fff;
-}
-.side-body .block img {
-  width: 100%;
-}
 
 @media (max-width: 768px) {
   @-webkit-keyframes slidein {
@@ -7428,6 +7422,13 @@ button.close {
     margin: 0;
   }
 }
+.b-panel {
+  background: #fff;
+  border-bottom: 2px solid #ddd;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
 /* -------------------------------------------------------------
   Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
   By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
@@ -7512,6 +7513,7 @@ button.close {
   cursor: default;
 }
 .view img {
+  width: 100%;
   display: block;
   position: relative;
   -webkit-transition: all, 0.2s, ease-in;
@@ -7529,6 +7531,37 @@ button.close {
   -ms-transform: rotate(-7deg) scale(1.5);
   -o-transform: rotate(-7deg) scale(1.5);
   transform: rotate(-7deg) scale(1.5);
+}
+
+.b-panel-body {
+  padding: 15px;
+}
+.b-panel-body:before, .b-panel-body:after {
+  content: " ";
+  display: table;
+}
+.b-panel-body:after {
+  clear: both;
+}
+
+.b-panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: inherit;
+  text-align: center;
+}
+.b-panel-title > a,
+.b-panel-title > small,
+.b-panel-title > .small,
+.b-panel-title > small > a,
+.b-panel-title > .small > a {
+  color: inherit;
+}
+
+.b-panel-footer {
+  padding: 10px 15px;
+  background-color: #f5f5f5;
 }
 
 /*# sourceMappingURL=global.css.map */
