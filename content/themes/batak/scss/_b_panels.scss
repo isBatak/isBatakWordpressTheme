@@ -1,9 +1,10 @@
 
 .b-panel{
-    background: $navbar-default-color;
-    border-bottom: 2px solid #ddd;
+    background: $panel-bg;
+    border-bottom: 2px solid $panel-default-border;
     @include box-shadow(0 0 1px rgba(0,0,0,.15));
 }
+
 @import "../lib/sass-css3-mixins/css3-mixins.scss";
 .view{
     width: 100%;
@@ -30,22 +31,53 @@
     @include clearfix;
 }
 
+.b-panel-time {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+    color: $b-panel-tags-text;
+    font-size: $font-size-small;
+}
+
 .b-panel-title {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: ceil(($font-size-base * 1.125));
+  font-size: $font-size-large;
   color: inherit;
   text-align: center;
-  > a,
-  > small,
-  > .small,
-  > small > a,
-  > .small > a {
-    color: inherit;
+  font-weight: bold;
+  line-height: $line-height-small;
+  a{
+      color: $gray-dark;
+      display: block;
+      text-decoration: none;
+      @include transition(all, .2s, ease-in);
+  }
+  a:hover{
+      color: $brand-primary;
   }
 }
 
 .b-panel-footer {
   padding: $panel-footer-padding;
-  background-color: $panel-footer-bg;
+  position: relative;
+}
+.b-panel-autor-img{
+    display: inline-block;
+    a{
+        display: inline-block;
+    }
+}
+.b-panel-tags{
+    margin-top: 16px;
+    float: right;
+    top: 0;
+    color: $b-panel-tags-text;
+    a{
+        color: $b-panel-tags-text;
+    }
+    a:hover{
+        color: $b-panel-tags-text;
+        text-decoration: none;
+    }
 }
