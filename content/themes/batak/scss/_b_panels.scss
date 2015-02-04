@@ -1,8 +1,6 @@
 
 .b-panel{
-    background: $panel-bg;
-    border-bottom: 2px solid $panel-default-border;
-    @include box-shadow(0 0 1px rgba(0,0,0,.15));
+    @include b_panel;
 }
 
 @import "../lib/sass-css3-mixins/css3-mixins.scss";
