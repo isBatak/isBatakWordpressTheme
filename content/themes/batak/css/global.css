@@ -7196,21 +7196,13 @@ button.close {
 }
 
 .side-body {
-  margin-left: 200px;
+  padding-left: 230px;
+  padding-right: 30px;
 }
 
 .site-content {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.site-content:before, .site-content:after {
-  content: " ";
-  display: table;
-}
-.site-content:after {
-  clear: both;
+  margin: 0 auto;
+  padding-top: 30px;
 }
 @media (min-width: 768px) {
   .site-content {
@@ -7454,6 +7446,7 @@ button.close {
 .b-panel {
   background: #fff;
   border-bottom: 2px solid #ddd;
+  margin-bottom: 30px;
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
 }
@@ -7634,12 +7627,14 @@ button.close {
 .b-article-panel {
   background: #fff;
   border-bottom: 2px solid #ddd;
+  margin-bottom: 30px;
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15) 2px 5px rgba(0, 0, 0, 0.4);
   -khtml-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15) 2px 5px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15) 2px 5px rgba(0, 0, 0, 0.4);
   -ms-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15) 2px 5px rgba(0, 0, 0, 0.4);
   -o-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15) 2px 5px rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.15) 2px 5px rgba(0, 0, 0, 0.4);
+  padding: 30px;
 }
 
 /*# sourceMappingURL=global.css.map */

@@ -1,3 +1,4 @@
 .b-article-panel{
     @include b_panel;
+    padding: $jumbotron-padding;
 }
