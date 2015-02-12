@@ -7624,6 +7624,14 @@ button.close {
   text-decoration: none;
 }
 
+article {
+  position: relative;
+}
+
+.b-featured-image-container {
+  width: 100%;
+}
+
 .b-article-panel {
   background: #fff;
   border-bottom: 2px solid #ddd;
@@ -7635,6 +7643,31 @@ button.close {
   -o-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15) 2px 5px rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.15) 2px 5px rgba(0, 0, 0, 0.4);
   padding: 30px;
+}
+
+.b-profile-pic {
+  text-align: center;
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  width: 210px;
+  height: 210px;
+  border: 5px solid #ffffff;
+  overflow: hidden;
+  position: absolute;
+  margin-top: -105px;
+  left: 50%;
+  margin-left: -105px;
+  background: #E76203;
+}
+.b-profile-pic img {
+  width: 188px;
+  height: 188px;
+  margin-top: 6px;
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=global.css.map */

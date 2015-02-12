@@ -1,0 +1,27 @@
+$profilePicWidth: 210px;
+$profilePicHeight: 210px;
+
+.b-profile-pic{
+    text-align: center;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    width: $profilePicWidth;
+    height: $profilePicHeight;
+    border: 5px solid #ffffff;
+    overflow: hidden;
+    position: absolute;
+    margin-top: -($profilePicHeight / 2);
+    left: 50%;
+    margin-left: -($profilePicWidth / 2);
+    background: #E76203;
+    img{
+        width: $profilePicWidth - 22px;
+        height: $profilePicHeight - 22px;
+        margin-top: 6px;
+        border-radius: 100%;
+        -moz-border-radius: 100%;
+        -webkit-border-radius: 100%;
+        overflow: hidden;
+    }
+}

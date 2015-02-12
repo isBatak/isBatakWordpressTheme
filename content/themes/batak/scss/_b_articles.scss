@@ -1,3 +1,9 @@
+article{
+    position: relative;
+}
+.b-featured-image-container{
+    width: 100%;
+}
 .b-article-panel{
     @include b_panel;
     padding: $jumbotron-padding;
