@@ -87,28 +87,28 @@ $duration: 300ms;
 		width: $container-md;
 	}
 	@media (min-width: $screen-lg-min) {
-		width: 1050px;
+		width: 1050px; 
 	}
 }
 
 
 @media (max-width: 768px) {
-	@include keyframes("slidein") {
+	@keyframes slidein {
 		0% { left: -$width; }
 		100% { left: 10px; }
 	}
 
-	@include keyframes(slideout) {
+	@keyframes slideout  {
 		0% { left: 0; }
 		100% { left: -$width; }
 	}
 
-	@include keyframes(bodyslidein) {
+	@keyframes bodyslidein  {
 		0% { left: 0; }
 		100% { left: $width; }
 	}
 
-	@include keyframes(bodyslideout) {
+	@keyframes bodyslideout  {
 		0% { left: $width; }
 		100% { left: 0; }
 	}
@@ -122,7 +122,7 @@ $duration: 300ms;
 			position: fixed;
 			width: 100%;
 			height: $navbar-side-height;
-			@include animation(bodyslidein $duration forwards);
+			animation: bodyslidein $duration forwards;
 		}
 		.navbar-brand{
 			height: $navbar-side-height;
@@ -132,13 +132,11 @@ $duration: 300ms;
 	.side-body {
 		margin-top: 70px;
 		position: relative;
-		@include animation(bodyslideout $duration forwards);
-		-webkit-transform-style: preserve-3d;
+		animation: bodyslideout $duration forwards;
 		transform-style: preserve-3d;
 	}
 	.body-slide-in {
-		@include animation(bodyslidein $duration forwards);
-		-webkit-transform-style: preserve-3d;
+		animation: bodyslidein $duration forwards;
 		transform-style: preserve-3d;
 	}
 	.navbar-toggle {
@@ -154,7 +152,6 @@ $duration: 300ms;
 	}
 
 	.side-menu-container > .navbar-nav.slide-in {
-		//@include animation(slidein $duration forwards);
 		-webkit-transform-style: preserve-3d;
 		transform-style: preserve-3d;
 	}

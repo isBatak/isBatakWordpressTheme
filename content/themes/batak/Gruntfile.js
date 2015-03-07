@@ -1,13 +1,6 @@
 'use strict';
 module.exports = function (grunt) {
 
-    // To support SASS/SCSS or Stylus, just install
-    // the appropriate grunt package and it will be automatically included
-    // in the build process, Sass is included by default:
-    //
-    // * for SASS/SCSS support, run `npm install --save-dev grunt-contrib-sass`
-    // * for Stylus/Nib support, `npm install --save-dev grunt-contrib-stylus`
-
     var npmDependencies = require('./package.json').devDependencies;
     var hasSass = npmDependencies['grunt-contrib-sass'] !== undefined;
     var hasStylus = npmDependencies['grunt-contrib-stylus'] !== undefined;
@@ -22,14 +15,7 @@ module.exports = function (grunt) {
         watch: {
             sass: {
                 files: ['scss/**/*.scss'],
-                tasks: (hasSass) ? ['sass:dev'] : null,
-                options: {
-                    livereload: true
-                }
-            },
-            stylus: {
-                files: ['stylus/**/*.styl'],
-                tasks: (hasStylus) ? ['stylus:dev'] : null,
+                tasks: (hasSass) ? ['sass:dev', 'autoprefixer'] : null,
                 options: {
                     livereload: true
                 }
@@ -43,6 +29,12 @@ module.exports = function (grunt) {
             },
             php: {
                 files: ['**/*.php'],
+                options: {
+                    livereload: true
+                }
+            },
+            html: {
+                files: ['**/*.html'],
                 options: {
                     livereload: true
                 }
@@ -96,36 +88,14 @@ module.exports = function (grunt) {
                 }
             }
         },
-        // Dev and production build for stylus
-        stylus: {
-            production: {
-                files: [
-                    {
-                        src: ['**/*.styl', '!**/_*.styl'],
-                        cwd: 'stylus',
-                        dest: 'css',
-                        ext: '.css',
-                        expand: true
-                    }
-                ],
-                options: {
-                    compress: true
-                }
+        // Autoprefixer setup
+        autoprefixer: {
+            options: {
+                browsers: ['last 2 versions', 'ie 8', 'ie 9']
             },
-            dev: {
-                files: [
-                    {
-                        src: ['**/*.styl', '!**/_*.styl'],
-                        cwd: 'stylus',
-                        dest: 'css',
-                        ext: '.css',
-                        expand: true
-                    }
-                ],
-                options: {
-                    compress: false
-                }
-            },
+            files: {
+                src: 'css/*.css'
+            }
         },
         // Bower task sets up require config
         bower: {
@@ -239,13 +209,9 @@ module.exports = function (grunt) {
             arr.push('sass:production');
         }
 
-        if (hasStylus) {
-            arr.push('stylus:production');
-        }
-
         arr.push('imagemin:production', 'svgmin:production', 'requirejs:production');
 
-        return arr;
+        grunt.task.run(arr);
     });
 
     // Template Setup Task
@@ -256,11 +222,8 @@ module.exports = function (grunt) {
             arr.push['sass:dev'];
         }
 
-        if (hasStylus) {
-            arr.push('stylus:dev');
-        }
-
         arr.push('bower-install');
+        grunt.task.run(arr);
     });
 
     // Load up tasks
@@ -268,10 +231,7 @@ module.exports = function (grunt) {
         grunt.loadNpmTasks('grunt-contrib-sass');
     }
 
-    if (hasStylus) {
-        grunt.loadNpmTasks('grunt-contrib-stylus');
-    }
-
+    grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-jshint');

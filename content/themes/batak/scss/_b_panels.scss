@@ -3,7 +3,6 @@
     @include b_panel;
 }
 
-@import "../lib/sass-css3-mixins/css3-mixins.scss";
 .view{
     width: 100%;
     height: 200px;
@@ -15,12 +14,12 @@
         width:100%;
         display: block;
         position: relative;
-        @include transition(all, .2s, ease-in);
+        transition: all .2s ease-in;
     }
 }
 .view:hover{
     img{
-        @include transform(rotate(-7deg) scale(1.5));
+        transform: rotate(-7deg) scale(1.5);
     }
 }
 
@@ -49,7 +48,7 @@
       color: $gray-dark;
       display: block;
       text-decoration: none;
-      @include transition(all, .2s, ease-in);
+      transition: all .2s ease-in;
   }
   a:hover{
       color: $brand-primary;
