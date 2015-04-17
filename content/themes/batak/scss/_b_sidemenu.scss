@@ -1,0 +1,58 @@
+.side-menu {
+	position: fixed;
+	top: 0;
+	width: $width;
+	height: 100%;
+	background-color: $navbar-inverse-bg;
+	.logo-side-menu{
+        a{
+            color: white;
+            display: block;
+            padding: $padding-base-vertical $padding-base-horizontal;
+            text-align: center;
+        }
+    }
+	> .nav {
+		width: $width;
+		height: 100%;
+		li{
+			width: 100%;
+			a{
+				padding: 10px;
+				color: $navbar-default-color;
+				text-align: center;
+				@include transition(all, .2s, ease-in);
+			}
+			a:hover,
+			a:focus{
+				background: transparent;
+				color: $brand-primary;
+			}
+		}
+		.active a {
+			background-color: lighten($navbar-inverse-bg, 10%);
+			border-right: 5px solid $brand-primary;
+			padding-right: 5px;
+		}
+	}
+	.panel{
+		border: none;
+		background-color: $navbar-inverse-bg;
+		margin-bottom: 0;
+		box-shadow: none;
+		border-radius: 0;
+		.panel{
+			background-color: transparent;
+		}
+	}
+	.panel-body {
+		padding: 0;
+		background-color: darken($navbar-inverse-bg, 3%);
+		> .nav{
+			//border-top: solid 1px #111;
+		}
+		.panel-body {
+			background-color: darken($navbar-inverse-bg, 5%);
+		}
+	}
+}

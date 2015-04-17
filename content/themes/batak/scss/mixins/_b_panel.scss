@@ -2,5 +2,5 @@
     background: $panel-bg;
     border-bottom: 2px solid $panel-default-border;
     margin-bottom: $grid-gutter-width;
-    @include box-shadow(0 0 1px rgba(0,0,0,.15));
+    box-shadow: 0 0 1px rgba(0,0,0,.15);
 }

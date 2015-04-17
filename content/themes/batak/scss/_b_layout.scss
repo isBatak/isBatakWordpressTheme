@@ -7,71 +7,7 @@ $duration: 300ms;
 	outline: none;
 }
 
-.side-menu {
-	position: fixed;
-	top: 0;
-	width: $width;
-	height: 100%;
-	background-color: $navbar-inverse-bg;
-	.navbar{
-		width: $width;
-		//height: $navbar-side-height * 2;
-		border: none;
-		margin-bottom: 0px;
-	}
-	.navbar-brand{
-		display: block;
-		width: 100%;
-		height: auto;
-		img{
-			margin: 0 auto;
-			height: 50px;
-		}
-	}
-	> .nav {
-		width: $width;
-		height: 100%;
-		li{
-			width: 100%;
-			a{
-				padding: 10px;
-				color: $navbar-default-color;
-				text-align: center;
-				@include transition(all, .2s, ease-in);
-			}
-			a:hover,
-			a:focus{
-				background: transparent;
-				color: $brand-primary;
-			}
-		}
-		.active a {
-			background-color: lighten($navbar-inverse-bg, 10%);
-			border-right: 5px solid $brand-primary;
-			padding-right: 5px;
-		}
-	}
-	.panel{
-		border: none;
-		background-color: $navbar-inverse-bg;
-		margin-bottom: 0;
-		@include box-shadow(none);
-		border-radius: 0;
-		.panel{
-			background-color: transparent;
-		}
-	}
-	.panel-body {
-		padding: 0;
-		background-color: darken($navbar-inverse-bg, 3%);
-		> .nav{
-			//border-top: solid 1px #111;
-		}
-		.panel-body {
-			background-color: darken($navbar-inverse-bg, 5%);
-		}
-	}
-}
+
 .side-body {
 	padding-left: $width + $grid-gutter-width;
 	padding-right: $grid-gutter-width;
@@ -87,7 +23,7 @@ $duration: 300ms;
 		width: $container-md;
 	}
 	@media (min-width: $screen-lg-min) {
-		width: 1050px; 
+		width: 1050px;
 	}
 }
 
@@ -111,22 +47,6 @@ $duration: 300ms;
 	@keyframes bodyslideout  {
 		0% { left: $width; }
 		100% { left: 0; }
-	}
-
-	.side-menu {
-		//position: relative;
-		//width: 100%;
-		//height: 0;
-		//border-right: 0;
-		.navbar{
-			position: fixed;
-			width: 100%;
-			height: $navbar-side-height;
-			animation: bodyslidein $duration forwards;
-		}
-		.navbar-brand{
-			height: $navbar-side-height;
-		}
 	}
 
 	.side-body {

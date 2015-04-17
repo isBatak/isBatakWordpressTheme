@@ -6,8 +6,7 @@
     "requirejs": "~2.1.5",
     "bootstrap-sass-official": "~3.3.0",
     "html5shiv": "~3.7.2",
-    "respond": "~1.4.2",
-    "sass-css3-mixins": "git@github.com:matthieua/sass-css3-mixins.git"
+    "respond": "~1.4.2"
   },
   "devDependencies": {}
 }

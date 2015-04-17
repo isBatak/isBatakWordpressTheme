@@ -17,81 +17,87 @@
         <p class="browserupgrade">Koristite <strong>zastarjelu</strong> verziju internet preglednika. Molimo Vas <a href="http://browsehappy.com/">ažurirajte svoj preglednik</a> kako bi unaprijedili prikaz stranice.</p>
     <![endif]-->
 
-    <!-- Menu -->
-    <div class="side-menu">
-        <div class="logo-side-menu">
-            <a class="b-brand" href="#">
-                <img src="images/logo.jpg"/>
-            </a>
-        </div>
 
-        <!-- Profile picture -->
-        <div class="profile-picture-container">
-            <img src="images/profile_picture.jpg"/>
-        </div>
+    <div class="outer-wrapper">
+        <div class="inner-wrapper">
 
-        <!-- Main Menu -->
-        <ul class="nav">
-
-            <li class="active"><a href="./index.html">Home</a></li>
-            <li><a href="./typography.html">Typography</a></li>
-            <li><a href="./miscellaneous.html">Miscellaneous</a></li>
-
-            <!-- Dropdown-->
-            <li class="panel" id="dropdown">
-                <a data-toggle="collapse" href="#dropdown-lvl1">
-                    Blog Templates <span class="caret"></span>
-                </a>
-
-                <!-- Dropdown level 1 -->
-                <div id="dropdown-lvl1" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <ul class="nav navbar-nav">
-                            <li><a href="./blog-sidebar.html">Blog Sidebar</a></li>
-
-                            <!-- Dropdown level 2 -->
-                            <li class="panel" id="dropdown">
-                                <a data-toggle="collapse" href="#dropdown-lvl2">
-                                    Blog Masonary <span class="caret"></span>
-                                </a>
-                                <div id="dropdown-lvl2" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <ul class="nav navbar-nav">
-                                            <li><a href="./blog-masonary-vertical.html">Blog Masonary Vertical</a></li>
-                                            <li><a href="./blog-masonary-horizontal.html">Blog Masonary Horizontal</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+            <!-- Menu -->
+            <div class="side-menu">
+                <div class="logo-side-menu">
+                    <a class="b-brand" href="#">
+                        <img src="images/logo.jpg"/>
+                    </a>
                 </div>
-            </li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="http://scotch.io" target="_blank">Link</a></li>
-        </ul>
-    </div>
 
-    <!-- Main Content -->
-    <div class="container-fluid side-body">
-        <nav class="navbar navbar-inverse">
-            <button type="button" class="navbar-toggle">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">
-                <img src="images/logo.jpg"/>
-            </a>
-        </nav>
-    </div>
+                <!-- Profile picture -->
+                <div class="profile-picture-container">
+                    <img src="images/profile_picture.jpg"/>
+                </div>
 
+                <!-- Main Menu -->
+                <ul class="nav">
+
+                    <li class="active"><a href="./index.html">Home</a></li>
+                    <li><a href="./typography.html">Typography</a></li>
+                    <li><a href="./miscellaneous.html">Miscellaneous</a></li>
+
+                    <!-- Dropdown-->
+                    <li class="panel" id="dropdown">
+                        <a data-toggle="collapse" href="#dropdown-lvl1">
+                            Blog Templates <span class="caret"></span>
+                        </a>
+
+                        <!-- Dropdown level 1 -->
+                        <div id="dropdown-lvl1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="./blog-sidebar.html">Blog Sidebar</a></li>
+
+                                    <!-- Dropdown level 2 -->
+                                    <li class="panel" id="dropdown">
+                                        <a data-toggle="collapse" href="#dropdown-lvl2">
+                                            Blog Masonary <span class="caret"></span>
+                                        </a>
+                                        <div id="dropdown-lvl2" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <ul class="nav navbar-nav">
+                                                    <li><a href="./blog-masonary-vertical.html">Blog Masonary Vertical</a></li>
+                                                    <li><a href="./blog-masonary-horizontal.html">Blog Masonary Horizontal</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="http://scotch.io" target="_blank">Link</a></li>
+                </ul>
+            </div>
+
+            <!-- Main Content -->
+            <div class="container-fluid side-body">
+                <nav class="navbar navbar-inverse">
+                    <button type="button" class="navbar-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo.jpg"/>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
 
     <script src="../js/libs/requirejs/require.js"></script>
     <script src="../js/main.js"></script>
 
-    <script src="//localhost:35729/livereload.js"></script>
+    <script src="//localhost:35729/livereload.js" />
+
 </body>
 </html>

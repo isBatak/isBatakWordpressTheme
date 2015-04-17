@@ -91,7 +91,10 @@ module.exports = function (grunt) {
         // Autoprefixer setup
         autoprefixer: {
             options: {
-                browsers: ['last 2 versions', 'ie 8', 'ie 9']
+                browsers: ['> 5%','last 2 versions', 'ie 8', 'ie 9'],
+                map: {
+                    inline: false
+                }
             },
             files: {
                 src: 'css/*.css'
@@ -162,12 +165,21 @@ module.exports = function (grunt) {
                 ],
             },
         },
+
+        wiredep: {
+            task: {
+                src: [
+                    'html_template/*.html'
+                ]
+            }
+        },
+
         // Clean dir
         clean: {
             options: {
                 force: true,
             },
-            src: ["js/libs"],
+            src: ["js/libs/*"],
         },
         // Image min
         imagemin: {
@@ -241,6 +253,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-requirejs');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-svgmin');
+    grunt.loadNpmTasks('grunt-wiredep');
 
     // Run bower install
     grunt.registerTask('bower-install', function () {
