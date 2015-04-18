@@ -16,18 +16,14 @@ require.config({
 require(['jquery', 'bootstrap'], function($) {
 
 	$(function () {
-		$('.navbar-toggle').click(function () {
-			$('.navbar-nav').toggleClass('slide-in');
-			$('.side-body').toggleClass('body-slide-in');
-			$('.side-menu .navbar').toggleClass('body-slide-in');
-			$('#search').removeClass('in').addClass('collapse').slideUp(200);
-		});
-
-		// Remove menu for searching
-		$('#search-trigger').click(function () {
-			$('.navbar-nav').removeClass('slide-in');
-			$('.side-body').removeClass('body-slide-in');
-			$('.side-menu .navbar').removeClass('body-slide-in');
+		var menuOverlay = $('#menuOverlay');
+		$('#sideMenuToggle').click(function () {
+			if(menuOverlay.hasClass('slide-out')){
+				menuOverlay.removeClass('slide-out').addClass('slide-in');
+			}
+			else{
+				menuOverlay.removeClass('slide-in').addClass('slide-out');
+			}
 		});
 	});
 });

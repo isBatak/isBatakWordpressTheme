@@ -1,0 +1,42 @@
+.outer-wrapper {
+    position:fixed !important;
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+}
+.inner-wrapper {
+    position:fixed !important;
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:$side-menu-width;
+    background: $body-bg;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    overflow: auto;
+    @media (max-width: $screen-sm) {
+        left: 0;
+        width: 100%;
+
+        @keyframes slideout {
+    		0% { margin-left: 0; }
+    		100% { margin-left: $side-menu-width; }
+    	}
+        @keyframes slidein {
+    		0% { margin-left: $side-menu-width; }
+    		100% { margin-left: 0; }
+    	}
+
+        &.slide-out {
+            animation: slideout $slide-animation-duration forwards;
+    		transform-style: preserve-3d;
+        }
+
+        &.slide-in {
+            animation: slidein $slide-animation-duration forwards;
+            transform-style: preserve-3d;
+        }
+    }
+}

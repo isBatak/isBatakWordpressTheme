@@ -7079,109 +7079,130 @@ button.close {
   color: #232323;
 }
 
-:focus {
-  outline: none;
+.outer-wrapper {
+  position: fixed !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
-.side-body {
-  padding-left: 230px;
-  padding-right: 30px;
+.inner-wrapper {
+  position: fixed !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 200px;
+  background: #F1F1F1;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  overflow: auto;
 }
-
-.site-content {
-  margin: 0 auto;
-  padding-top: 30px;
-}
-@media (min-width: 768px) {
-  .site-content {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .site-content {
-    width: 970px;
-  }
-}
-@media (min-width: 1300px) {
-  .site-content {
-    width: 1050px;
-  }
-}
-
 @media (max-width: 768px) {
-  @-webkit-keyframes slidein {
-    0% {
-      left: -200px;
-    }
-    100% {
-      left: 10px;
-    }
-  }
-  @keyframes slidein {
-    0% {
-      left: -200px;
-    }
-    100% {
-      left: 10px;
-    }
+  .inner-wrapper {
+    left: 0;
+    width: 100%;
   }
   @-webkit-keyframes slideout {
     0% {
-      left: 0;
+      margin-left: 0;
     }
     100% {
-      left: -200px;
+      margin-left: 200px;
     }
   }
   @keyframes slideout {
     0% {
-      left: 0;
+      margin-left: 0;
     }
     100% {
-      left: -200px;
+      margin-left: 200px;
     }
   }
-  @-webkit-keyframes bodyslidein {
+  @-webkit-keyframes slidein {
     0% {
-      left: 0;
+      margin-left: 200px;
     }
     100% {
-      left: 200px;
+      margin-left: 0;
     }
   }
-  @keyframes bodyslidein {
+  @keyframes slidein {
     0% {
-      left: 0;
+      margin-left: 200px;
     }
     100% {
-      left: 200px;
+      margin-left: 0;
     }
   }
-  @-webkit-keyframes bodyslideout {
-    0% {
-      left: 200px;
-    }
-    100% {
-      left: 0;
-    }
-  }
-  @keyframes bodyslideout {
-    0% {
-      left: 200px;
-    }
-    100% {
-      left: 0;
-    }
-  }
-  .side-body {
-    margin-top: 70px;
-    position: relative;
-    -webkit-animation: bodyslideout 300ms forwards;
-            animation: bodyslideout 300ms forwards;
+  .inner-wrapper.slide-out {
+    -webkit-animation: slideout 300ms forwards;
+            animation: slideout 300ms forwards;
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
   }
+  .inner-wrapper.slide-in {
+    -webkit-animation: slidein 300ms forwards;
+            animation: slidein 300ms forwards;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+  }
+}
 
+:focus {
+  outline: none;
+}
+
+/*
+.side-body {
+	padding-left: $side-menu-width + $grid-gutter-width;
+	padding-right: $grid-gutter-width;
+}
+
+.site-content{
+	margin: 0 auto;
+	padding-top: $grid-gutter-width;
+
+	@media (min-width: $screen-sm-min) {
+		width: $container-sm;
+	}
+	@media (min-width: $screen-md-min) {
+		width: $container-md;
+	}
+	@media (min-width: $screen-lg-min) {
+		width: 1050px;
+	}
+}*/
+@media (max-width: 768px) {
+  	/*
+  	@keyframes slidein {
+  		0% { left: -$side-menu-width; }
+  		100% { left: 10px; }
+  	}
+  
+  	@keyframes slideout  {
+  		0% { left: 0; }
+  		100% { left: -$side-menu-width; }
+  	}
+  
+  	@keyframes bodyslidein  {
+  		0% { left: 0; }
+  		100% { left: $side-menu-width; }
+  	}
+  
+  	@keyframes bodyslideout  {
+  		0% { left: $side-menu-width; }
+  		100% { left: 0; }
+  	}
+  	*/
+  /*
+  .side-body {
+  	position: relative;
+  	animation: bodyslideout $duration forwards;
+  	transform-style: preserve-3d;
+  }
+  */
   .body-slide-in {
     -webkit-animation: bodyslidein 300ms forwards;
             animation: bodyslidein 300ms forwards;
@@ -7224,6 +7245,7 @@ button.close {
   width: 200px;
   height: 100%;
   background-color: #232323;
+  overflow: auto;
 }
 .side-menu .logo-side-menu a {
   color: white;
@@ -7270,6 +7292,13 @@ button.close {
 }
 .side-menu .panel-body .panel-body {
   background-color: #161616;
+}
+
+.b-mobile-brand {
+  padding: 10px 10px;
+}
+.b-mobile-brand img {
+  height: 30px;
 }
 
 .b-panel {
@@ -7378,6 +7407,11 @@ article {
   margin-bottom: 30px;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
   padding: 30px;
+}
+@media (max-width: 768px) {
+  .b-article-panel {
+    padding: 15px;
+  }
 }
 
 .b-profile-pic {

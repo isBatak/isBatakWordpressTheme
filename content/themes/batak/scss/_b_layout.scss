@@ -1,17 +1,13 @@
-//vars
-$width: 200px;
-$navbar-side-height: 50px;
-$duration: 300ms;
-
 :focus {
 	outline: none;
 }
 
-
+/*
 .side-body {
-	padding-left: $width + $grid-gutter-width;
+	padding-left: $side-menu-width + $grid-gutter-width;
 	padding-right: $grid-gutter-width;
 }
+
 .site-content{
 	margin: 0 auto;
 	padding-top: $grid-gutter-width;
@@ -25,38 +21,40 @@ $duration: 300ms;
 	@media (min-width: $screen-lg-min) {
 		width: 1050px;
 	}
-}
+}*/
 
 
-@media (max-width: 768px) {
+@media (max-width: $screen-sm) {
+	/*
 	@keyframes slidein {
-		0% { left: -$width; }
+		0% { left: -$side-menu-width; }
 		100% { left: 10px; }
 	}
 
 	@keyframes slideout  {
 		0% { left: 0; }
-		100% { left: -$width; }
+		100% { left: -$side-menu-width; }
 	}
 
 	@keyframes bodyslidein  {
 		0% { left: 0; }
-		100% { left: $width; }
+		100% { left: $side-menu-width; }
 	}
 
 	@keyframes bodyslideout  {
-		0% { left: $width; }
+		0% { left: $side-menu-width; }
 		100% { left: 0; }
 	}
-
+	*/
+	/*
 	.side-body {
-		margin-top: 70px;
 		position: relative;
 		animation: bodyslideout $duration forwards;
 		transform-style: preserve-3d;
 	}
+	*/
 	.body-slide-in {
-		animation: bodyslidein $duration forwards;
+		animation: bodyslidein $slide-animation-duration forwards;
 		transform-style: preserve-3d;
 	}
 	.navbar-toggle {

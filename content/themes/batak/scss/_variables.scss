@@ -1,4 +1,4 @@
-// United 3.3.2
+// United 3.3.4
 // Variables
 // --------------------------------------------------
 
@@ -861,3 +861,14 @@ $page-header-border-color:    $gray-lighter;
 $dl-horizontal-offset:        $component-offset-horizontal;
 //** Horizontal line color.
 $hr-border:                   $gray-lighter;
+
+
+//== Side Menu
+//
+//##
+
+//** Side menu width.
+$side-menu-width: 200px;
+
+
+$slide-animation-duration: 300ms;

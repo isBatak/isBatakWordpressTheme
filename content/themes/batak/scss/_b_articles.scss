@@ -7,4 +7,8 @@ article{
 .b-article-panel{
     @include b_panel;
     padding: $jumbotron-padding;
+
+    @media (max-width: $screen-sm) {
+        padding: $panel-body-padding;
+    }
 }

@@ -1,9 +1,10 @@
 .side-menu {
 	position: fixed;
 	top: 0;
-	width: $width;
+	width: $side-menu-width;
 	height: 100%;
 	background-color: $navbar-inverse-bg;
+	overflow: auto;
 	.logo-side-menu{
         a{
             color: white;
@@ -13,7 +14,7 @@
         }
     }
 	> nav ul{
-		width: $width;
+		width: $side-menu-width;
 		height: 100%;
 		li{
 			width: 100%;
