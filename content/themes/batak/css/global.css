@@ -7231,25 +7231,25 @@ button.close {
   padding: 8px 12px;
   text-align: center;
 }
-.side-menu > .nav {
+.side-menu > nav ul {
   width: 200px;
   height: 100%;
 }
-.side-menu > .nav li {
+.side-menu > nav ul li {
   width: 100%;
 }
-.side-menu > .nav li a {
+.side-menu > nav ul li a {
   padding: 10px;
   color: #fff;
   text-align: center;
   transition: all, 0.2s, ease-in;
 }
-.side-menu > .nav li a:hover,
-.side-menu > .nav li a:focus {
+.side-menu > nav ul li a:hover,
+.side-menu > nav ul li a:focus {
   background: transparent;
   color: #e76203;
 }
-.side-menu > .nav .active a {
+.side-menu > nav ul .active a {
   background-color: #3d3d3d;
   border-right: 5px solid #e76203;
   padding-right: 5px;

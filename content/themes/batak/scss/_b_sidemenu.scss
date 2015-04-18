@@ -12,7 +12,7 @@
             text-align: center;
         }
     }
-	> .nav {
+	> nav ul{
 		width: $width;
 		height: 100%;
 		li{
@@ -48,9 +48,6 @@
 	.panel-body {
 		padding: 0;
 		background-color: darken($navbar-inverse-bg, 3%);
-		> .nav{
-			//border-top: solid 1px #111;
-		}
 		.panel-body {
 			background-color: darken($navbar-inverse-bg, 5%);
 		}
