@@ -9,7 +9,8 @@ module.exports = function (grunt) {
         // Dirs
         dirs: {
             bower: 'lib',
-            libs: 'js/libs'
+            libs: 'js/libs',
+            html: 'html_template'
         },
         // Watches for changes and runs tasks
         watch: {
@@ -158,7 +159,7 @@ module.exports = function (grunt) {
                     },
                     {
                         expand: true,
-                        src: ['<%= dirs.bower %>bootstrap-sass-official/assets/fonts/bootstrap'],
+                        src: ['<%= dirs.bower %>/bootstrap-sass-official/assets/fonts/bootstrap'],
                         flatten: true,
                         dest: 'fonts'
                     },
@@ -203,6 +204,26 @@ module.exports = function (grunt) {
                         cwd: 'images',
                         src: '**/*.svg',
                         dest: 'images'
+                    }
+                ]
+            }
+        },
+
+        // Stencil HTML assembler
+        stencil: {
+            main: {
+                options: {
+                    partials: '<%= dirs.html %>/partials',
+                    templates: '<%= dirs.html %>/templates'
+                },
+                files: [
+                    {
+                        expand: true,
+                        cwd: '<%= dirs.html %>/pages/',
+                        src: '<%= dirs.html %>/**/*.dot.html',
+                        dest: '<%= dirs.html %>',
+                        ext: '.html',
+                        flatten: true
                     }
                 ]
             }
