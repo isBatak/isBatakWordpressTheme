@@ -1,0 +1,32 @@
+{
+    "title": "Miscellaneous",
+    "template": "default"
+}
+
+{{= it.include("side_menu") }}
+
+        <div id="menuOverlay" class="inner-wrapper">
+
+            {{= it.include("mobile_header") }}
+
+            <!-- Main Content -->
+            <div class="container-fluid side-body">
+
+                <article class="b-article-panel">
+                    {{= it.include("bootstrap/navbars") }}
+                    {{= it.include("bootstrap/buttons") }}
+                    {{= it.include("bootstrap/typography") }}
+                    {{= it.include("bootstrap/tables") }}
+                    {{= it.include("bootstrap/forms") }}
+                    {{= it.include("bootstrap/navs") }}
+                    {{= it.include("bootstrap/indicators") }}
+                    {{= it.include("bootstrap/progress_bars") }}
+                    {{= it.include("bootstrap/containers") }}
+                    {{= it.include("bootstrap/dialogs") }}
+                </article>
+
+            </div>
+
+            {{= it.include("footer") }}
+
+        </div>

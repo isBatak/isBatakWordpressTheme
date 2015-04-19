@@ -35,7 +35,14 @@ module.exports = function (grunt) {
                 }
             },
             html: {
-                files: ['**/*.html'],
+                files: ['**/*.html', '!<%= dirs.html %>/*.html'],
+                options: {
+                    livereload: true
+                }
+            },
+            dot: {
+                files: ['<%= dirs.html %>/**/*.dot.html', '<%= dirs.html %>/**/*.md'],
+                tasks: ['stencil:main'],
                 options: {
                     livereload: true
                 }
@@ -214,16 +221,17 @@ module.exports = function (grunt) {
             main: {
                 options: {
                     partials: '<%= dirs.html %>/partials',
-                    templates: '<%= dirs.html %>/templates'
+                    templates: '<%= dirs.html %>/templates',
+                    dot_template_settings: { strip: false }
                 },
                 files: [
                     {
                         expand: true,
                         cwd: '<%= dirs.html %>/pages/',
-                        src: '<%= dirs.html %>/**/*.dot.html',
+                        src: '**/*.dot.html',
                         dest: '<%= dirs.html %>',
                         ext: '.html',
-                        flatten: true
+                        flatten: false
                     }
                 ]
             }
@@ -264,6 +272,7 @@ module.exports = function (grunt) {
         grunt.loadNpmTasks('grunt-contrib-sass');
     }
 
+    grunt.loadNpmTasks('grunt-debug-task');
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');

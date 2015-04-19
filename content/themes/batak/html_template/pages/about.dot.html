@@ -1,0 +1,21 @@
+{
+    "title": "About",
+    "template": "default"
+}
+
+{{= it.include("side_menu") }}
+
+        <div id="menuOverlay" class="inner-wrapper">
+
+            {{= it.include("mobile_header") }}
+
+            <!-- Main Content -->
+            <div class="container-fluid side-body">
+
+                {{= it.include("about/content") }}
+
+            </div>
+
+            {{= it.include("footer") }}
+
+        </div>
