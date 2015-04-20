@@ -16,10 +16,7 @@ module.exports = function (grunt) {
         watch: {
             sass: {
                 files: ['scss/**/*.scss'],
-                tasks: (hasSass) ? ['sass:dev', 'autoprefixer'] : null,
-                options: {
-                    livereload: true
-                }
+                tasks: (hasSass) ? ['sass:dev', 'autoprefixer'] : null
             },
             js: {
                 files: ['js/**/*.js'],
@@ -40,6 +37,12 @@ module.exports = function (grunt) {
                     livereload: true
                 }
             },
+            css : {
+				files : ['css/**/*.css'],
+				options : {
+					livereload : true
+				}
+			},
             dot: {
                 files: ['<%= dirs.html %>/**/*.dot.html', '<%= dirs.html %>/**/*.md'],
                 tasks: ['stencil:main'],

@@ -1,0 +1,9 @@
+.b-search-bar{
+    background: darken($body-bg, 10%);
+    input[type="search"]{
+        width: 100%;
+        border: none;
+        height: 78px;
+        background: transparent;
+    }
+}
