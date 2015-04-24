@@ -169,6 +169,20 @@ module.exports = function (grunt) {
                     },
                     {
                         expand: true,
+                        src: ['<%= dirs.bower %>/prism/prism.js'],
+                        flatten: true,
+                        dest: '<%= dirs.libs %>/prism/',
+                        filter: 'isFile'
+                    },
+                    {
+                        expand: true,
+                        src: ['<%= dirs.bower %>/prism/themes/prism-okaidia.css'],
+                        flatten: true,
+                        dest: 'css',
+                        filter: 'isFile'
+                    },
+                    {
+                        expand: true,
                         src: ['<%= dirs.bower %>/bootstrap-sass-official/assets/fonts/bootstrap'],
                         flatten: true,
                         dest: 'fonts'
