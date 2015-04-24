@@ -1,5 +1,5 @@
 {
-    "title": "Blog Single",
+    "title": "Blog Single With Sidebar",
     "template": "default"
 }
 
@@ -11,10 +11,11 @@
             {{= it.include("search_bar") }}
 
             <!-- Main Content -->
-            <div class="container-fluid side-body">
-
-                {{= it.include("blog/single") }}
-
+            <div class="container-fluid b-container-big-padding">
+                <div class="b-main-content">
+                    {{= it.include("blog/single_with_sidebar") }}
+                    {{= it.include("sidebar/sidebar") }}
+                </div>
             </div>
 
             {{= it.include("footer") }}
