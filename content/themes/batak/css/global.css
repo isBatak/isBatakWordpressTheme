@@ -7505,6 +7505,11 @@ article {
 .b-footer {
   background: #fbfbfb;
   border-top: 1px solid #D5D5D5;
+  color: #777;
+  padding: 70px 40px 60px;
+}
+.b-footer .h-gutter {
+  margin-bottom: 40px;
 }
 
 .error-template {
@@ -7518,6 +7523,33 @@ article {
 }
 .error-actions .btn {
   margin-right: 10px;
+}
+
+.b-social-icon-strip {
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
+  transition-duration: 0.2s;
+}
+.b-social-icon-strip:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.b-social-icon-strip.fb:hover {
+  color: #3B5998;
+}
+.b-social-icon-strip.tw:hover {
+  color: #4099FF;
+}
+.b-social-icon-strip.gp:hover {
+  color: #d34836;
+}
+.b-social-icon-strip.em:hover {
+  color: #f39c12;
+}
+.b-social-icon-strip.gh:hover {
+  color: #232323;
 }
 
 /*# sourceMappingURL=global.css.map */

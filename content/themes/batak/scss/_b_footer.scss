@@ -1,4 +1,9 @@
 .b-footer {
     background: lighten($body-bg, 4%);
     border-top: 1px solid $footer-border-color;
+    color: $gray;
+    padding: 70px 40px 60px;
+    .h-gutter {
+        margin-bottom: 40px;
+    }
 }
