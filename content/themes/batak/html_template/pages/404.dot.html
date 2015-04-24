@@ -1,0 +1,22 @@
+{
+    "title": "404",
+    "template": "default"
+}
+
+{{= it.include("side_menu") }}
+
+        <div id="menuOverlay" class="inner-wrapper">
+
+            {{= it.include("mobile_header") }}
+            {{= it.include("search_bar") }}
+
+            <!-- Main Content -->
+            <div class="container-fluid">
+
+                {{= it.include("404") }}
+
+            </div>
+
+            {{= it.include("footer") }}
+
+        </div>
