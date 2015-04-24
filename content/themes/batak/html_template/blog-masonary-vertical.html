@@ -105,9 +105,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-lg-12 b-search-bar">
-            <form action="">
-                <input type="search" name="search" placeholder="Search Bar">
-            </form>
+            <a href="#search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
         </div>
     </div>
 </div>
@@ -219,6 +217,15 @@
         </div>
 
     </div>
+
+    <div id="search">
+    <button type="button" class="close">×</button>
+    <form>
+        <input type="search" value="" placeholder="type keyword(s) here" />
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+</div>
+
 
     <script src="../js/libs/requirejs/require.js"></script>
     <script src="../js/main.js"></script>
