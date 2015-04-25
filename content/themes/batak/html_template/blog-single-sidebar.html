@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="../css/global.css" rel="stylesheet">
-    <link href="../css/prism-okaidia.css" rel="stylesheet" />
+    <link href="../css/prism.css" rel="stylesheet" />
 
     <!-- For IE 9 and below. ICO should be 32x32 pixels in size -->
     <!--[if IE]><link rel="shortcut icon" href="../images/favicon.ico"><![endif]-->
@@ -124,18 +124,135 @@
 
     <div class="b-article-content">
         <div class="b-article-panel">
-            test
+            <h1>Getting started with Prism.js</h1>
+            <div class="b-article-by">
+                <span class="b-panel-autor-img">
+                    <a href="#">
+                        <img src="./images/avatar.jpg" alt="" class="img-circle" width="80" height="80">
+                        Ivica Batinić
+                    </a>
+                </span>
+                <span class="b-article-by-item">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                    April 25, 2015
+                </span>
+                <span class="b-article-by-item">
+                    <a href="#">
+                        <span class="glyphicon glyphicon-comment"></span>
+                        16
+                    </a>
+                </span>
+                <span class="b-article-by-item">
+                    <span class="glyphicon glyphicon-tags"></span>
+                    juice, freebies, drink
+                </span>
+            </div>
+            <div class="action-buttons text-center">
+                <div class="btn-group btn-group-lg">
+                    <a class="btn btn-lg btn-primary" href="#">
+                        <span class="fa fa-code"></span> VIEW CODE
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="b-article-panel">
+            <h2>Examples</h2>
+            <p>The Prism source, highlighted with Prism (don’t you just love how meta this is?):</p>
             <pre>
-                    <code class="language-css">
-                        p { color: red }
-                    </code>
+                <code class="language-css">
+/* **********************************************
+     Begin prism-file-highlight.js
+********************************************** */
+
+(function () {
+	if (!self.Prism || !self.document || !document.querySelector) {
+		return;
+	}
+
+	self.Prism.fileHighlight = function() {
+
+		var Extensions = {
+			'js': 'javascript',
+			'html': 'markup',
+			'svg': 'markup',
+			'xml': 'markup',
+			'py': 'python',
+			'rb': 'ruby',
+			'ps1': 'powershell',
+			'psm1': 'powershell'
+		};
+
+		Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach(function(pre) {
+			var src = pre.getAttribute('data-src');
+			var extension = (src.match(/\.(\w+)$/) || [,''])[1];
+			var language = Extensions[extension] || extension;
+
+			var code = document.createElement('code');
+			code.className = 'language-' + language;
+
+			pre.textContent = '';
+
+			code.textContent = 'Loading…';
+
+			pre.appendChild(code);
+
+			var xhr = new XMLHttpRequest();
+
+			xhr.open('GET', src, true);
+
+			xhr.onreadystatechange = function() {
+				if (xhr.readyState == 4) {
+
+					if (xhr.status < 400 && xhr.responseText) {
+						code.textContent = xhr.responseText;
+
+						Prism.highlightElement(code);
+					}
+					else if (xhr.status >= 400) {
+						code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+					}
+					else {
+						code.textContent = '✖ Error: File does not exist or is empty';
+					}
+				}
+			};
+
+			xhr.send(null);
+		});
+
+	};
+
+	self.Prism.fileHighlight();
+
+})();
+                </code>
             </pre>
         </div>
         <div class="b-article-panel">
-            test
-        </div>
-        <div class="b-article-panel">
-            test
+            <div class="yarpp-related">
+                <div class="further-reading text-center">
+                	<h3>Read Next</h3>
+                	<div class="row">
+                		<div class="col-sm-6">
+                            <section class="b-panel-title">
+                    			<a href="#">
+                                    <img width="600" height="250" src="images/user.jpg" class="img-responsive wp-post-image" alt="Sed ne, dum huic obsequor, vobis molestus sim.">
+                                    Sed ne, dum huic obsequor, vobis molestus sim.
+                                </a>
+                            </section>
+                		</div>
+                		<div class="col-sm-6">
+                            <section class="b-panel-title">
+                    			<a href="#">
+                                    <img width="600" height="250" src="images/orange.jpg" class="img-responsive wp-post-image" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </a>
+                            </section>
+                		</div>
+                		</div>
+
+                </div>
+            </div>
         </div>
     </div>
 </article>

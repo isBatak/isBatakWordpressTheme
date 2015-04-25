@@ -7349,22 +7349,69 @@ button.close {
 article {
   position: relative;
 }
-
-.b-featured-image-container {
-  width: 100%;
+article .b-article-content h1 {
+  margin-top: 0;
+  margin-bottom: 40px;
 }
-
-.b-article-panel {
+article .b-article-content h2 {
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+article .b-article-content h3 {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+article .b-article-content p {
+  margin-bottom: 40px;
+}
+article .b-article-content pre {
+  margin-left: -70px;
+  margin-right: -70px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 40px 80px;
+  border: 0;
+  border-radius: 0;
+  width: auto;
+}
+article .b-article-content .b-article-by {
+  color: #bbb;
+  margin-bottom: 40px;
+}
+article .b-article-content .b-article-by a {
+  color: #bbb;
+}
+article .b-article-content .b-article-by a:hover {
+  text-decoration: none;
+}
+article .b-article-content .b-article-by .b-article-by-item,
+article .b-article-content .b-article-by .b-panel-autor-img {
+  margin-right: 10px;
+}
+article .b-article-content .b-article-by .b-article-by-item img,
+article .b-article-content .b-article-by .b-panel-autor-img img {
+  margin-right: 8px;
+}
+article .b-article-content .b-article-by .b-article-by-item .glyphicon,
+article .b-article-content .b-article-by .b-panel-autor-img .glyphicon {
+  margin-right: 4px;
+}
+article .b-article-panel {
   background: #fff;
   border-bottom: 2px solid #ddd;
   margin-bottom: 30px;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
-  padding: 30px;
+  padding: 50px 70px;
 }
 @media (max-width: 768px) {
-  .b-article-panel {
+  article .b-article-panel {
     padding: 15px;
   }
+}
+
+.b-featured-image-container {
+  width: 100%;
 }
 
 .b-profile-pic {
