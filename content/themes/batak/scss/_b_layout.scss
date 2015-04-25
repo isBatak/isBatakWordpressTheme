@@ -4,6 +4,10 @@
 .b-container-big-padding {
 	padding-left: $jumbotron-padding;
 	padding-right: $jumbotron-padding;
+	@media (max-width: $screen-xs) {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 .b-main-content {
 	position: relative;
@@ -38,6 +42,9 @@
 	right: 0;
 	top: 0;
 	height: 100%;
+	@media (max-width: $screen-xs) {
+		width: 100%;
+	}
 	@media (max-width: $screen-lg) {
 		position: relative;
 		padding-top: 0;

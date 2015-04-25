@@ -7158,6 +7158,12 @@ button.close {
   padding-left: 30px;
   padding-right: 30px;
 }
+@media (max-width: 480px) {
+  .b-container-big-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 
 .b-main-content {
   position: relative;
@@ -7192,6 +7198,11 @@ button.close {
   right: 0;
   top: 0;
   height: 100%;
+}
+@media (max-width: 480px) {
+  .b-sidebar-container {
+    width: 100%;
+  }
 }
 @media (max-width: 1300px) {
   .b-sidebar-container {
@@ -7365,21 +7376,23 @@ button.close {
 article {
   position: relative;
 }
-article .b-article-content h1 {
+article .b-article-content h1,
+article .b-article-content h2,
+article .b-article-content h3,
+article .b-article-content p {
   margin-top: 0;
   margin-bottom: 40px;
+}
+@media (max-width: 480px) {
+  article .b-article-content h1,
+  article .b-article-content h2,
+  article .b-article-content h3,
+  article .b-article-content p {
+    margin-bottom: 20px;
+  }
 }
 article .b-article-content h2 {
   font-size: 32px;
-  margin-top: 0;
-  margin-bottom: 40px;
-}
-article .b-article-content h3 {
-  margin-top: 0;
-  margin-bottom: 40px;
-}
-article .b-article-content p {
-  margin-bottom: 40px;
 }
 article .b-article-content pre {
   margin-left: -70px;
@@ -7390,6 +7403,13 @@ article .b-article-content pre {
   border: 0;
   border-radius: 0;
   width: auto;
+}
+@media (max-width: 480px) {
+  article .b-article-content pre {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 40px 40px;
+  }
 }
 article .b-article-content .b-article-by {
   color: #bbb;
@@ -7413,6 +7433,11 @@ article .b-article-content .b-article-by .b-article-by-item .glyphicon,
 article .b-article-content .b-article-by .b-panel-autor-img .glyphicon {
   margin-right: 4px;
 }
+@media (max-width: 480px) {
+  article .b-article-content .b-article-by {
+    margin-bottom: 20px;
+  }
+}
 article .b-article-panel {
   background: #fff;
   border-bottom: 2px solid #ddd;
@@ -7420,9 +7445,9 @@ article .b-article-panel {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
   padding: 50px 70px;
 }
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   article .b-article-panel {
-    padding: 15px;
+    padding: 20px;
   }
 }
 

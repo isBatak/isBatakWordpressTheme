@@ -1,21 +1,18 @@
 article{
     position: relative;
     .b-article-content {
-        h1 {
+        h1,
+        h2,
+        h3,
+        p {
             margin-top: 0;
             margin-bottom: 40px;
+            @media (max-width: $screen-xs) {
+                margin-bottom: $modal-inner-padding;
+            }
         }
         h2 {
             font-size: 32px;
-            margin-top: 0;
-            margin-bottom: 40px;
-        }
-        h3 {
-            margin-top: 0;
-            margin-bottom: 40px;
-        }
-        p{
-            margin-bottom: 40px;
         }
         pre{
             margin-left: -70px;
@@ -26,6 +23,11 @@ article{
             border: 0;
             border-radius: 0;
             width: auto;
+            @media (max-width: $screen-xs) {
+                margin-left: -$modal-inner-padding;
+                margin-right: -$modal-inner-padding;
+                padding: 40px 40px;
+            }
         }
         .b-article-by{
             color: $b-panel-tags-text;
@@ -46,14 +48,17 @@ article{
                     margin-right: $thumbnail-padding;
                 }
             }
+            @media (max-width: $screen-xs) {
+                margin-bottom: $modal-inner-padding;
+            }
         }
     }
     .b-article-panel{
         @include b_panel;
         padding: 50px 70px;
 
-        @media (max-width: $screen-sm) {
-            padding: $panel-body-padding;
+        @media (max-width: $screen-xs) {
+            padding: $modal-inner-padding;
         }
     }
 }
