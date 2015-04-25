@@ -7173,8 +7173,18 @@ button.close {
   max-width: 970px;
   margin: 0 auto;
 }
+@media (max-width: 1300px) {
+  .b-content-with-sidebar article {
+    max-width: none;
+  }
+}
+@media (max-width: 1300px) {
+  .b-content-with-sidebar {
+    padding-right: 0;
+  }
+}
 
-.b-sidebar {
+.b-sidebar-container {
   width: 300px;
   margin: 0 auto;
   padding-top: 30px;
@@ -7182,6 +7192,12 @@ button.close {
   right: 0;
   top: 0;
   height: 100%;
+}
+@media (max-width: 1300px) {
+  .b-sidebar-container {
+    position: relative;
+    padding-top: 0;
+  }
 }
 
 .side-menu {

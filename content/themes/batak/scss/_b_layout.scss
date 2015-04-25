@@ -19,12 +19,18 @@
 		width: 100%;
 		max-width: $container-desktop;
 		margin: 0 auto;
+		@media (max-width: $screen-lg) {
+			max-width: none;
+		}
+	}
+	@media (max-width: $screen-lg) {
+		padding-right: 0;
 	}
 }
 .b-content-no-sidebar {
 
 }
-.b-sidebar {
+.b-sidebar-container {
 	width: $sidebar-width;
 	margin: 0 auto;
 	padding-top: $jumbotron-padding;
@@ -32,4 +38,8 @@
 	right: 0;
 	top: 0;
 	height: 100%;
+	@media (max-width: $screen-lg) {
+		position: relative;
+		padding-top: 0;
+	}
 }
