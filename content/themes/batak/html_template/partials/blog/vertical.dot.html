@@ -1,12 +1,13 @@
 <div class="row">
+    {{ for(var i=0; i < 3; i++) { }}
     <div class="col-sm-4 col-md-4 col-lg-4">
         <div class="b-panel">
             <div class="view">
-                <img src="images/orange.jpg" />
+                <img src="images/700x400.jpg" />
             </div>
             <div class="b-panel-body">
                 <span class="b-panel-time">3. Velj · Blog</span>
-                <h2 class="b-panel-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></h2>
+                <h2 class="b-panel-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></h2>
             </div>
             <div class="b-panel-footer">
                 <span class="b-panel-autor-img">
@@ -25,7 +26,7 @@
     <div class="col-sm-4 col-md-4 col-lg-4">
         <div class="b-panel">
             <div class="view">
-                <img src="images/user.jpg" />
+                <img src="images/700x400.jpg" />
             </div>
             <div class="b-panel-body">
                 <span class="b-panel-time">3. Velj · Blog</span>
@@ -48,7 +49,7 @@
     <div class="col-sm-4 col-md-4 col-lg-4">
         <div class="b-panel">
             <div class="view">
-                <img src="images/pc.jpg" />
+                <img src="images/700x400.jpg" />
             </div>
             <div class="b-panel-body">
                 <span class="b-panel-time">3. Velj · Blog</span>
@@ -68,4 +69,7 @@
             </div>
         </div>
     </div>
+    {{ } }}
 </div>
+
+{{= it.include("pagination") }}
