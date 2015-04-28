@@ -32,7 +32,8 @@
 	}
 }
 .b-content-no-sidebar {
-
+	max-width: $screen-lg;
+	margin: 0 auto;
 }
 .b-sidebar-container {
 	width: $sidebar-width;

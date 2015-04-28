@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Blog Vertical</title>
+    <title>Blog Vertical One Column</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,6 +22,11 @@
     <!--[if lt IE 9]>
         <script src="../js/libs/html5shiv/html5shiv.js"></script>
         <script src="../js/libs/respond/respond.js"></script>
+    <![endif]-->
+
+    <!-- CSS3 Masonary falback -->
+    <!--[if lte IE 9]>
+        <script src="./js/plugins/masonry.pkgd.min.js"></script>
     <![endif]-->
 </head>
 <body>
@@ -119,7 +124,8 @@
             <!-- Main Content -->
             <div class="container-fluid b-container-big-padding">
                 <div class="b-main-content">
-                    
+                    <div class="b-content-no-sidebar">
+    
 <div class="b-panel">
     <div class="row">
         <div class="col-md-7">
@@ -169,7 +175,7 @@
 </div>
 
 
-<!-- Pagination -->
+    <!-- Pagination -->
 <div class="row text-center">
     <div class="col-lg-12">
         <ul class="pagination">
@@ -198,6 +204,7 @@
     </div>
 </div>
 
+</div>
 
                 </div>
             </div>

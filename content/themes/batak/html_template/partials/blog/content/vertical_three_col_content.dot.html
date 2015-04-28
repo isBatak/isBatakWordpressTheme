@@ -1,7 +1,6 @@
-<div class="row">
+<section class="b-masonry">
     {{ for(var i=0; i < 3; i++) { }}
-    <div class="col-sm-4 col-md-4 col-lg-4">
-        <div class="b-panel">
+        <article class="b-panel item">
             <div class="view">
                 <img src="images/700x400.jpg" />
             </div>
@@ -21,10 +20,8 @@
                     <a href="#">drink</a>
                 </span>
             </div>
-        </div>
-    </div>
-    <div class="col-sm-4 col-md-4 col-lg-4">
-        <div class="b-panel">
+        </article>
+        <article class="b-panel item">
             <div class="view">
                 <img src="images/700x400.jpg" />
             </div>
@@ -44,10 +41,8 @@
                     <a href="#">drink</a>
                 </span>
             </div>
-        </div>
-    </div>
-    <div class="col-sm-4 col-md-4 col-lg-4">
-        <div class="b-panel">
+        </article>
+        <article class="b-panel item">
             <div class="view">
                 <img src="images/700x400.jpg" />
             </div>
@@ -67,9 +62,6 @@
                     <a href="#">drink</a>
                 </span>
             </div>
-        </div>
-    </div>
+        </article>
     {{ } }}
-</div>
-
-{{= it.include("pagination") }}
+</section>

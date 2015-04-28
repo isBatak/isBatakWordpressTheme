@@ -2,7 +2,7 @@ require.config({
 	baseUrl: "../js",
 	paths: {
 		jquery: "libs\\jquery\\jquery",
-		bootstrap: "libs\\bootstrap\\bootstrap",
+		bootstrap: "libs\\bootstrap\\bootstrap"
 	},
 	shim: {
 		"bootstrap": {
@@ -46,5 +46,9 @@ require(['jquery', 'bootstrap'], function($) {
 	        return false;
 	    });
 		/* End Search */
+
+		/* Masonary */
+		/* End Masonary */
+
 	});
 });

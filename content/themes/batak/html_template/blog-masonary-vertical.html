@@ -23,6 +23,11 @@
         <script src="../js/libs/html5shiv/html5shiv.js"></script>
         <script src="../js/libs/respond/respond.js"></script>
     <![endif]-->
+
+    <!-- CSS3 Masonary falback -->
+    <!--[if lte IE 9]>
+        <script src="./js/plugins/masonry.pkgd.min.js"></script>
+    <![endif]-->
 </head>
 <body>
     <!--[if lt IE 9]>
@@ -119,10 +124,10 @@
             <!-- Main Content -->
             <div class="container-fluid b-container-big-padding">
                 <div class="b-main-content">
-                    <div class="row">
+                    <div class="b-content-fullwidth">
+    <section class="b-masonry">
     
-    <div class="col-sm-4 col-md-4 col-lg-4">
-        <div class="b-panel">
+        <article class="b-panel item">
             <div class="view">
                 <img src="images/700x400.jpg" />
             </div>
@@ -142,10 +147,8 @@
                     <a href="#">drink</a>
                 </span>
             </div>
-        </div>
-    </div>
-    <div class="col-sm-4 col-md-4 col-lg-4">
-        <div class="b-panel">
+        </article>
+        <article class="b-panel item">
             <div class="view">
                 <img src="images/700x400.jpg" />
             </div>
@@ -165,10 +168,8 @@
                     <a href="#">drink</a>
                 </span>
             </div>
-        </div>
-    </div>
-    <div class="col-sm-4 col-md-4 col-lg-4">
-        <div class="b-panel">
+        </article>
+        <article class="b-panel item">
             <div class="view">
                 <img src="images/700x400.jpg" />
             </div>
@@ -188,11 +189,9 @@
                     <a href="#">drink</a>
                 </span>
             </div>
-        </div>
-    </div>
+        </article>
     
-    <div class="col-sm-4 col-md-4 col-lg-4">
-        <div class="b-panel">
+        <article class="b-panel item">
             <div class="view">
                 <img src="images/700x400.jpg" />
             </div>
@@ -212,10 +211,8 @@
                     <a href="#">drink</a>
                 </span>
             </div>
-        </div>
-    </div>
-    <div class="col-sm-4 col-md-4 col-lg-4">
-        <div class="b-panel">
+        </article>
+        <article class="b-panel item">
             <div class="view">
                 <img src="images/700x400.jpg" />
             </div>
@@ -235,10 +232,8 @@
                     <a href="#">drink</a>
                 </span>
             </div>
-        </div>
-    </div>
-    <div class="col-sm-4 col-md-4 col-lg-4">
-        <div class="b-panel">
+        </article>
+        <article class="b-panel item">
             <div class="view">
                 <img src="images/700x400.jpg" />
             </div>
@@ -258,11 +253,9 @@
                     <a href="#">drink</a>
                 </span>
             </div>
-        </div>
-    </div>
+        </article>
     
-    <div class="col-sm-4 col-md-4 col-lg-4">
-        <div class="b-panel">
+        <article class="b-panel item">
             <div class="view">
                 <img src="images/700x400.jpg" />
             </div>
@@ -282,10 +275,8 @@
                     <a href="#">drink</a>
                 </span>
             </div>
-        </div>
-    </div>
-    <div class="col-sm-4 col-md-4 col-lg-4">
-        <div class="b-panel">
+        </article>
+        <article class="b-panel item">
             <div class="view">
                 <img src="images/700x400.jpg" />
             </div>
@@ -305,10 +296,8 @@
                     <a href="#">drink</a>
                 </span>
             </div>
-        </div>
-    </div>
-    <div class="col-sm-4 col-md-4 col-lg-4">
-        <div class="b-panel">
+        </article>
+        <article class="b-panel item">
             <div class="view">
                 <img src="images/700x400.jpg" />
             </div>
@@ -328,12 +317,11 @@
                     <a href="#">drink</a>
                 </span>
             </div>
-        </div>
-    </div>
+        </article>
     
-</div>
+</section>
 
-<!-- Pagination -->
+    <!-- Pagination -->
 <div class="row text-center">
     <div class="col-lg-12">
         <ul class="pagination">
@@ -362,6 +350,7 @@
     </div>
 </div>
 
+</div>
 
                 </div>
             </div>
