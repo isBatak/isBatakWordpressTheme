@@ -7304,12 +7304,30 @@ button.close {
   width: 100%;
   display: inline-block;
   position: relative;
-  transition: all .2s ease-out;
+  transition: all .2s;
 }
 .view:hover img {
-  -webkit-transform: rotate(-7deg) scale(1.5) opacity(0.5);
-      -ms-transform: rotate(-7deg) scale(1.5) opacity(0.5);
-          transform: rotate(-7deg) scale(1.5) opacity(0.5);
+  -webkit-transform: rotate(-7deg) scale(1.5);
+      -ms-transform: rotate(-7deg) scale(1.5);
+          transform: rotate(-7deg) scale(1.5);
+  opacity: 0.5;
+}
+.view .view-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  vertical-align: middle;
+  display: table-cell;
+}
+.view .view-overlay a {
+  font-size: 24px;
+  color: #fff;
+  background: #232323;
+  padding: 20px;
+  border-radius: 40px;
 }
 
 .b-panel-body {
