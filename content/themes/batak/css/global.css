@@ -7302,15 +7302,14 @@ button.close {
 }
 .view img {
   width: 100%;
-  display: inline-block;
+  display: block;
   position: relative;
-  transition: all .2s;
+  transition: all .2s linear;
 }
 .view:hover img {
   -webkit-transform: rotate(-7deg) scale(1.5);
       -ms-transform: rotate(-7deg) scale(1.5);
           transform: rotate(-7deg) scale(1.5);
-  opacity: 0.5;
 }
 .view .view-overlay {
   position: absolute;
@@ -7322,12 +7321,49 @@ button.close {
   vertical-align: middle;
   display: table-cell;
 }
+.view .view-overlay .outer {
+  position: relative;
+  top: 50%;
+}
+.view .view-overlay .outer .inner {
+  position: relative;
+  top: -12px;
+}
 .view .view-overlay a {
   font-size: 24px;
   color: #fff;
   background: #232323;
-  padding: 20px;
+  padding: 22px 22px 20px 22px;
+  margin: 0 10px;
   border-radius: 40px;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+.view .view-overlay a .glyphicon {
+  transition: all 0.2s linear;
+}
+.view .view-overlay a:nth-child(odd) {
+  -webkit-transform: translateY(-100px);
+      -ms-transform: translateY(-100px);
+          transform: translateY(-100px);
+}
+.view .view-overlay a:nth-child(even) {
+  -webkit-transform: translateY(100px);
+      -ms-transform: translateY(100px);
+          transform: translateY(100px);
+}
+.view .view-overlay a:hover .glyphicon {
+  color: #e76203;
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+.view .view-overlay:hover a {
+  transition-delay: 0.1s;
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+          transform: translateY(0px);
 }
 
 .b-panel-body {
