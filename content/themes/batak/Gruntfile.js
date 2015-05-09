@@ -128,83 +128,13 @@ module.exports = function (grunt) {
                 }
             }
         },
-        // Copy js files to libs folder
-        copy: {
-            dev: {
-                files: [
-                    {
-                        expand: true,
-                        src: ['<%= dirs.bower %>/bootstrap-sass-official/assets/javascripts/bootstrap.js'],
-                        flatten: true,
-                        dest: '<%= dirs.libs %>/bootstrap/',
-                        filter: 'isFile'
-                    },
-                    {
-                        expand: true,
-                        src: ['<%= dirs.bower %>/html5shiv/dist/html5shiv.js'],
-                        flatten: true,
-                        dest: '<%= dirs.libs %>/html5shiv/',
-                        filter: 'isFile'
-                    },
-                    {
-                        expand: true,
-                        src: ['<%= dirs.bower %>/jquery/jquery.js'],
-                        flatten: true,
-                        dest: '<%= dirs.libs %>/jquery/',
-                        filter: 'isFile'
-                    },
-                    {
-                        expand: true,
-                        src: ['<%= dirs.bower %>/requirejs/require.js'],
-                        flatten: true,
-                        dest: '<%= dirs.libs %>/requirejs/',
-                        filter: 'isFile'
-                    },
-                    {
-                        expand: true,
-                        src: ['<%= dirs.bower %>/respond/src/respond.js'],
-                        flatten: true,
-                        dest: '<%= dirs.libs %>/respond/',
-                        filter: 'isFile'
-                    },
-                    {
-                        expand: true,
-                        src: ['<%= dirs.bower %>/prism/prism.js'],
-                        flatten: true,
-                        dest: '<%= dirs.libs %>/prism/',
-                        filter: 'isFile'
-                    },
-                    {
-                        expand: true,
-                        src: ['<%= dirs.bower %>/prism/themes/prism-okaidia.css'],
-                        flatten: true,
-                        dest: 'css',
-                        filter: 'isFile'
-                    },
-                    {
-                        expand: true,
-                        src: ['<%= dirs.bower %>/bootstrap-sass-official/assets/fonts/bootstrap'],
-                        flatten: true,
-                        dest: 'fonts'
-                    },
-                ],
-            },
-        },
-
+        // Wiredep
         wiredep: {
             task: {
                 src: [
                     'html_template/*.html'
                 ]
             }
-        },
-
-        // Clean dir
-        clean: {
-            options: {
-                force: true,
-            },
-            src: ["js/libs/*"],
         },
         // Image min
         imagemin: {
@@ -280,7 +210,6 @@ module.exports = function (grunt) {
             arr.push['sass:dev'];
         }
 
-        arr.push('bower-install');
         grunt.task.run(arr);
     });
 
@@ -291,8 +220,6 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-debug-task');
     grunt.loadNpmTasks('grunt-autoprefixer');
-    grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-watch');
@@ -303,20 +230,4 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-wiredep');
     grunt.loadNpmTasks('grunt-stencil');
 
-    // Run bower install
-    grunt.registerTask('bower-install', function () {
-        var done = this.async();
-        var bower = require('bower').commands;
-        bower.install().on('end', function (data) {
-            done();
-        }).on('data', function (data) {
-            console.log(data);
-        }).on('error', function (err) {
-            console.error(err);
-            done();
-        });
-    });
-
-    // copy dependencies to js/libs folder
-    grunt.registerTask('dev-copy', ['clean','copy:dev']);
 };
