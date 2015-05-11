@@ -1,20 +1,45 @@
 <?php
 add_action('wp_enqueue_scripts', 'theme_enqueue_scripts');
 function theme_enqueue_scripts(){
+    global $wp_scripts;
 
-	wp_register_script('modernizr', get_bloginfo('template_url') . '/js/modernizr.js');
-	wp_enqueue_script('modernizr');
+	wp_enqueue_style('fontawsome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+	wp_enqueue_style('global', get_bloginfo('template_url') . '/css/global.css');
+	wp_enqueue_style('prism', get_bloginfo('template_url') . '/css/prism.css');
 
-	wp_register_script('require', get_bloginfo('template_url') . '/vendor/requirejs/require.js', array(), false, true);
-	wp_enqueue_script('require');
+	wp_register_script('html5shiv', get_bloginfo('template_url') . '/lib/html5shiv/dist/html5shiv.min.js');
+	wp_enqueue_script('html5shiv');
+    $wp_scripts->add_data('html5shiv', 'conditional', 'lt IE 9');
 
-	wp_register_script('global', get_bloginfo('template_url') . '/js/global.js', array('require'), false, true);
-	wp_enqueue_script('global');
+    wp_register_script('html5shiv-printshiv', get_bloginfo('template_url') . '/lib/html5shiv/dist/html5shiv-printshiv.min.js');
+    wp_enqueue_script('html5shiv-printshiv');
+    $wp_scripts->add_data('html5shiv-printshiv', 'conditional', 'lt IE 9');
 
-	wp_register_script('livereload', 'http://batak.dev:35729/livereload.js?snipver=1', null, false, true);
+    wp_register_script('respond', get_bloginfo('template_url') . '/lib/html5shiv/dist/respond.min.js');
+    wp_enqueue_script('respond');
+    $wp_scripts->add_data('respond', 'conditional', 'lt IE 9');
+
+    /* Footer */
+
+    wp_register_script('angular', get_bloginfo('template_url') . '/lib/angular/angular.js', null, false, true);
+    wp_enqueue_script('angular');
+
+    wp_register_script('angular-ui-router', get_bloginfo('template_url') . '/lib/angular-ui-router/release/angular-ui-router.min.js', null, false, true);
+    wp_enqueue_script('angular-ui-router');
+
+    wp_register_script('angular-animate', get_bloginfo('template_url') . '/lib/angular-animate/angular-animate.min.js', null, false, true);
+    wp_enqueue_script('angular-animate');
+
+    wp_register_script('angular-sanitize', get_bloginfo('template_url') . '/lib/angular-sanitize/angular-sanitize.min.js', null, false, true);
+    wp_enqueue_script('angular-sanitize');
+
+
+	wp_register_script('main', get_bloginfo('template_url') . '/js/main.js', array('jquery'), false, true);
+	wp_enqueue_script('main');
+
+	wp_register_script('livereload', 'http://localhost:35729/livereload.js?snipver=1', null, false, true);
 	wp_enqueue_script('livereload');
 
-	wp_enqueue_style('global', get_bloginfo('template_url') . '/css/global.css');
 }
 
 //Add Featured Image Support

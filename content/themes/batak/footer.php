@@ -1,7 +1,11 @@
-		</div>
-		<footer id="page-footer">
-			<p class="footer-copyright">Copyright &copy; <?= date('Y') ?> <?php bloginfo('name') ?></p>
-		</footer>
+
+
 		<?php wp_footer() ?>
+        <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/app/app.module.js"></script>
+        <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/app/app.states.js"></script>
+        <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/app/components/home/homeController.js"></script>
+        <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/app/components/home/homeService.js"></script>
+        <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/app/components/blog/blogController.js"></script>
+        <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/app/components/blog/blogService.js"></script>
 	</body>
 </html>
