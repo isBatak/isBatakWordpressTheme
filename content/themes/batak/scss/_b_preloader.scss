@@ -1,0 +1,23 @@
+.b-preloader-box{
+  width:200px;
+  height:220px;
+  position:absolute;
+  left:50%;
+  top:50%;
+  margin:-110px 0 0 -100px;
+  .b-preloader-logo{
+    text-align: center;
+  }
+}
+
+.b-progress{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: $gray-light;
+  .b-progress-bar{
+    background:  $brand-primary;
+    height: 100%;
+  }
+}

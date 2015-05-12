@@ -16,6 +16,10 @@
     background: $body-bg;
     box-shadow: -2px 0 5px rgba(0,0,0,0.5);
     overflow: auto;
+    transition: left $slide-animation-duration;
+    &.loading-mode{
+        left: 0 !important;
+    }
     @media (max-width: $screen-sm) {
         left: 0;
         width: 100%;

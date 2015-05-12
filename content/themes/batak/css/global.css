@@ -1443,6 +1443,7 @@ img {
   background-color: #F1F1F1;
   border: 1px solid #ddd;
   border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   display: inline-block;
   max-width: 100%;
@@ -3127,6 +3128,7 @@ output {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 .form-control:focus {
@@ -3848,6 +3850,7 @@ input[type="button"].btn-block {
 
 .fade {
   opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
   transition: opacity 0.15s linear;
 }
 .fade.in {
@@ -3873,8 +3876,11 @@ tbody.collapse.in {
   position: relative;
   height: 0;
   overflow: hidden;
+  -webkit-transition-property: height, visibility;
   transition-property: height, visibility;
+  -webkit-transition-duration: 0.35s;
   transition-duration: 0.35s;
+  -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
 
@@ -5343,6 +5349,7 @@ a.badge:hover, a.badge:focus {
   background-color: #F1F1F1;
   border: 1px solid #ddd;
   border-radius: 4px;
+  -webkit-transition: border 0.2s ease-in-out;
   transition: border 0.2s ease-in-out;
 }
 .thumbnail > img,
@@ -5480,11 +5487,13 @@ a.thumbnail.active {
   text-align: center;
   background-color: #e76203;
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  -webkit-transition: width 0.6s ease;
   transition: width 0.6s ease;
 }
 
 .progress-striped .progress-bar,
 .progress-bar-striped {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-size: 40px 40px;
 }
@@ -5499,6 +5508,7 @@ a.thumbnail.active {
   background-color: #38B44A;
 }
 .progress-striped .progress-bar-success {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 
@@ -5506,6 +5516,7 @@ a.thumbnail.active {
   background-color: #232323;
 }
 .progress-striped .progress-bar-info {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 
@@ -5513,6 +5524,7 @@ a.thumbnail.active {
   background-color: #EFB73E;
 }
 .progress-striped .progress-bar-warning {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 
@@ -5520,6 +5532,7 @@ a.thumbnail.active {
   background-color: #DF382C;
 }
 .progress-striped .progress-bar-danger {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 
@@ -6198,7 +6211,7 @@ button.close {
   -webkit-transform: translate(0, -25%);
   -ms-transform: translate(0, -25%);
   transform: translate(0, -25%);
-  transition: -webkit-transform 0.3s ease-out;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
 }
 .modal.in .modal-dialog {
@@ -6562,6 +6575,7 @@ button.close {
 .carousel-inner > .item {
   display: none;
   position: relative;
+  -webkit-transition: 0.6s ease-in-out left;
   transition: 0.6s ease-in-out left;
 }
 .carousel-inner > .item > img,
@@ -6573,7 +6587,7 @@ button.close {
 }
 @media all and (transform-3d), (-webkit-transform-3d) {
   .carousel-inner > .item {
-    transition: -webkit-transform 0.6s ease-in-out;
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
     transition: transform 0.6s ease-in-out;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -6641,6 +6655,7 @@ button.close {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 .carousel-control.left {
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
@@ -6648,6 +6663,7 @@ button.close {
 .carousel-control.right {
   left: auto;
   right: 0;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
@@ -7098,6 +7114,11 @@ button.close {
   background: #F1F1F1;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
   overflow: auto;
+  -webkit-transition: left 300ms;
+          transition: left 300ms;
+}
+.inner-wrapper.loading-mode {
+  left: 0 !important;
 }
 @media (max-width: 768px) {
   .inner-wrapper {
@@ -7241,6 +7262,7 @@ button.close {
   padding: 10px;
   color: #fff;
   text-align: center;
+  -webkit-transition: all, 0.2s, ease-in;
   transition: all, 0.2s, ease-in;
 }
 .side-menu > nav ul li a:hover,
@@ -7304,7 +7326,8 @@ button.close {
   width: 100%;
   display: block;
   position: relative;
-  transition: all .2s linear;
+  -webkit-transition: all .2s linear;
+          transition: all .2s linear;
 }
 .view:hover img {
   -webkit-transform: rotate(-7deg) scale(1.5);
@@ -7337,10 +7360,12 @@ button.close {
   margin: 0 10px;
   border-radius: 40px;
   opacity: 0;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+          transition: all 0.2s linear;
 }
 .view .view-overlay a .glyphicon {
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+          transition: all 0.2s linear;
 }
 .view .view-overlay a:nth-child(odd) {
   -webkit-transform: translateY(-100px);
@@ -7359,7 +7384,8 @@ button.close {
           transform: rotate(360deg);
 }
 .view .view-overlay:hover a {
-  transition-delay: 0.1s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
   opacity: 1;
   -webkit-transform: translateY(0px);
       -ms-transform: translateY(0px);
@@ -7398,7 +7424,8 @@ button.close {
   color: #333;
   display: block;
   text-decoration: none;
-  transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+          transition: all .2s ease-in;
 }
 .b-panel-title a:hover {
   color: #e76203;
@@ -7554,7 +7581,8 @@ article .b-article-panel {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.9);
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out;
   -webkit-transform: translate(0px, -100%) scale(0, 0);
       -ms-transform: translate(0px, -100%) scale(0, 0);
           transform: translate(0px, -100%) scale(0, 0);
@@ -7627,7 +7655,8 @@ article .b-article-panel {
   -webkit-transform: scale(0.8);
       -ms-transform: scale(0.8);
           transform: scale(0.8);
-  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
 }
 .b-social-icon-strip:hover {
   -webkit-transform: scale(1.1);
@@ -7682,6 +7711,30 @@ article .b-article-panel {
        -moz-column-count: 1;
             column-count: 1;
   }
+}
+
+.b-preloader-box {
+  width: 200px;
+  height: 220px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -110px 0 0 -100px;
+}
+.b-preloader-box .b-preloader-logo {
+  text-align: center;
+}
+
+.b-progress {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: #AEA79F;
+}
+.b-progress .b-progress-bar {
+  background: #e76203;
+  height: 100%;
 }
 
 /*# sourceMappingURL=global.css.map */
