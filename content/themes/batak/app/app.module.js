@@ -2,5 +2,8 @@
 
 angular.module('batakApp', ['ngAnimate', 'ui.router', 'ngSanitize'])
     .config(['$locationProvider', function($locationProvider) {
-        $locationProvider.html5Mode(true).hashPrefix('!');
+        // check if browser supports history API
+        if(window.history && window.history.pushState){
+            $locationProvider.html5Mode(true).hashPrefix('!');
+        }
     }]);

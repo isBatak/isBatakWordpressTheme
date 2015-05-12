@@ -1,5 +1,5 @@
 <!DOCTYPE html >
-    <html class="<?php language_attributes() ?> ng-app="batakApp">
+    <html class="<?php language_attributes() ?>>
     <head>
         <base href="/">
         <meta charset="<?php bloginfo( 'charset' ) ?>">

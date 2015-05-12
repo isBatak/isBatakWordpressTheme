@@ -1,8 +1,6 @@
 angular.module('batakApp')
     .config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider) {
 
-        $urlRouterProvider.otherwise('/');
-
         $stateProvider
             .state('home', {
                 url: '/',
@@ -14,4 +12,6 @@ angular.module('batakApp')
                 templateUrl: wp_global.template_directory_uri + '/app/components/blog/blogView.html',
                 controller: 'blogCtrl'
             });
+
+        $urlRouterProvider.otherwise('/');
     }]);
