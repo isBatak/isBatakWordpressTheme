@@ -1,5 +1,5 @@
 var blogCtrl = angular.module('batakApp')
-    .controller('blogCtrl', [ '$scope', '$q', 'Preload', 'loadPosts', function ($scope, $q, Preload, loadPosts) {
+    .controller('BlogController', [ '$scope', '$q', 'Preload', 'loadPosts', function ($scope, $q, Preload, loadPosts) {
 
         $scope.title = "Blog";
 

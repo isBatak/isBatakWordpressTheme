@@ -5,12 +5,12 @@ angular.module('batakApp')
             .state('home', {
                 url: '/',
                 templateUrl: wp_global.template_directory_uri + '/app/components/home/homeView.html',
-                controller: 'homeCtrl'
+                controller: 'HomeController as HC'
             })
             .state('blog', {
                 url: '/blog',
                 templateUrl: wp_global.template_directory_uri + '/app/components/blog/blogView.html',
-                controller: 'blogCtrl',
+                controller: 'BlogController as BC',
                 resolve: {
                     loadPosts: 'LoadPostsService'
                 }
