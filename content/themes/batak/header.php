@@ -29,7 +29,7 @@
 
     </head>
 
-    <body>
+    <body <?php body_class(); ?>>
 
         <!--[if lt IE 9]>
         <p class="browserupgrade">Koristite <strong>zastarjelu</strong> verziju internet preglednika. Molimo Vas <a href="http://browsehappy.com/">ažurirajte svoj preglednik</a> kako bi unaprijedili prikaz stranice.</p>

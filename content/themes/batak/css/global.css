@@ -7103,6 +7103,14 @@ button.close {
   bottom: 0;
   left: 0;
 }
+.admin-bar .outer-wrapper {
+  top: 46px;
+}
+@media screen and (min-width: 783px) {
+  .admin-bar .outer-wrapper {
+    top: 32px;
+  }
+}
 
 .inner-wrapper {
   position: fixed !important;
@@ -7116,6 +7124,14 @@ button.close {
   overflow: auto;
   -webkit-transition: left 300ms;
           transition: left 300ms;
+}
+.admin-bar .inner-wrapper {
+  top: 46px;
+}
+@media screen and (min-width: 783px) {
+  .admin-bar .inner-wrapper {
+    top: 32px;
+  }
 }
 .inner-wrapper.loading-mode {
   left: 0 !important;
@@ -7244,6 +7260,14 @@ button.close {
   height: 100%;
   background-color: #232323;
   overflow: auto;
+}
+.admin-bar .side-menu {
+  top: 46px;
+}
+@media screen and (min-width: 783px) {
+  .admin-bar .side-menu {
+    top: 32px;
+  }
 }
 .side-menu .logo-side-menu a {
   color: white;
@@ -7737,9 +7761,35 @@ article .b-article-panel {
   height: 100%;
 }
 
-.ng-hide-remove {
-  -webkit-animation: 0.5s fadeInUp ease;
-          animation: 0.5s fadeInUp ease;
+.ng-animate {
+  -webkit-transition: 0.5s linear all;
+          transition: 0.5s linear all;
+}
+
+.ng-enter {
+  opacity: 0;
+}
+
+.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+
+.ng-enter-stagger {
+  /* this will have a 100ms delay between each successive leave animation */
+  -webkit-transition-delay: 5s;
+          transition-delay: 5s;
+  /* in case the stagger doesn't work then the duration value
+   must be set to 0 to avoid an accidental CSS inheritance */
+  -webkit-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+.ng-leave {
+  opacity: 1;
+}
+
+.ng-leave.ng-leave-active {
+  opacity: 0;
 }
 
 /* b Preloader Box */
@@ -7850,6 +7900,122 @@ article .b-article-panel {
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
           animation-name: fadeInUp;
+}
+
+/* Make clicks pass-through */
+#loading-bar,
+#loading-bar-spinner {
+  pointer-events: none;
+  -webkit-transition: 350ms linear all;
+          transition: 350ms linear all;
+}
+
+#loading-bar.ng-enter,
+#loading-bar.ng-leave.ng-leave-active,
+#loading-bar-spinner.ng-enter,
+#loading-bar-spinner.ng-leave.ng-leave-active {
+  opacity: 0;
+}
+
+#loading-bar.ng-enter.ng-enter-active,
+#loading-bar.ng-leave,
+#loading-bar-spinner.ng-enter.ng-enter-active,
+#loading-bar-spinner.ng-leave {
+  opacity: 1;
+}
+
+#loading-bar .bar {
+  -webkit-transition: width 350ms;
+          transition: width 350ms;
+  background: #e76203;
+  position: fixed;
+  z-index: 10002;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-bottom-right-radius: 1px;
+  border-top-right-radius: 1px;
+}
+.admin-bar #loading-bar .bar {
+  top: 46px;
+}
+@media screen and (min-width: 783px) {
+  .admin-bar #loading-bar .bar {
+    top: 32px;
+  }
+}
+
+/* Fancy blur effect */
+#loading-bar .peg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  opacity: 1.0;
+  box-shadow: 0 0 10px #e76203, 0 0 5px #e76203;
+  border-radius: 100%;
+  -webkit-transform: rotate(3deg) translate(0px, -4px);
+      -ms-transform: rotate(3deg) translate(0px, -4px);
+          transform: rotate(3deg) translate(0px, -4px);
+}
+
+#loading-bar-spinner {
+  display: block;
+  position: fixed;
+  z-index: 10002;
+  top: 10px;
+  right: 10px;
+}
+.admin-bar #loading-bar-spinner {
+  top: 56px;
+}
+@media screen and (min-width: 783px) {
+  .admin-bar #loading-bar-spinner {
+    top: 42px;
+  }
+}
+
+#loading-bar-spinner .spinner-icon {
+  width: 14px;
+  height: 14px;
+  border: solid 2px transparent;
+  border-top-color: #e76203;
+  border-left-color: #e76203;
+  border-radius: 10px;
+  -webkit-animation: loading-bar-spinner 400ms linear infinite;
+          animation: loading-bar-spinner 400ms linear infinite;
+}
+
+@-webkit-keyframes loading-bar-spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loading-bar-spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=global.css.map */
