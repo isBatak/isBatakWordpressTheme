@@ -10,7 +10,10 @@ angular.module('batakApp')
             .state('blog', {
                 url: '/blog',
                 templateUrl: wp_global.template_directory_uri + '/app/components/blog/blogView.html',
-                controller: 'blogCtrl'
+                controller: 'blogCtrl',
+                resolve: {
+                    loadPosts: 'LoadPostsService'
+                }
             });
 
         $urlRouterProvider.otherwise('/');

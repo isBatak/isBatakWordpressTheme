@@ -1,6 +1,7 @@
 <!DOCTYPE html >
     <html class="<?php language_attributes() ?>>
     <head>
+        <?php  get_template_part( 'partials/signature' ); ?>
         <base href="/">
         <meta charset="<?php bloginfo( 'charset' ) ?>">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -16,7 +17,7 @@
         <link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/images/apple-touch-icon-precomposed.png">
 
         <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
-        <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/batak.png">
+        <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.png">
 
 		<?php wp_head() ?>
 

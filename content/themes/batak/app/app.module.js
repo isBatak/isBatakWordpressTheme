@@ -6,4 +6,9 @@ angular.module('batakApp', ['ngAnimate', 'ui.router', 'ngSanitize'])
         if(window.history && window.history.pushState){
             $locationProvider.html5Mode(true).hashPrefix('!');
         }
-    }]);
+    }])
+    .factory('Preload', function() {
+        return {
+            toSplash: true
+        };
+    });

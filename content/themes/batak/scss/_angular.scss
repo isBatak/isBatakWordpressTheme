@@ -1,0 +1,70 @@
+
+//.ng-hide-add { animation:0.5s fadeOutDown ease; }
+.ng-hide-remove { animation:0.5s fadeInUp ease; }
+
+/* b Preloader Box */
+.b-preloader-box{
+  &.ng-hide{
+    animation:0.5s fadeOut ease;
+  }
+}
+
+/* ANIMATIONS (FROM ANIMATE.CSS) ======================== */
+
+@keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+}
+
+/* fadeOutUp */
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.fadeOutUp {
+  animation-name: fadeOutUp;
+}
+
+/* fadeOutDown */
+@keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+.fadeOutDown {
+  animation-name: fadeOutDown;
+}
+
+/* fadeInUp */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
