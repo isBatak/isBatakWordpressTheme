@@ -8,8 +8,10 @@
         <div preloader></div>
 
         <!-- Main Content -->
-        <div ui-view class="container-fluid">
+        <div class="container-fluid" ng-class="{'b-container-big-padding': !toSplash, }">
+            <div class="b-main-content" ui-view>
 
+            </div>
         </div>
 
     </div>

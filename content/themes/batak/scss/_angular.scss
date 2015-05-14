@@ -1,6 +1,26 @@
+.ng-animate {
+  transition:0.5s linear all;
+}
+.ng-enter {
+  opacity:0;
+}
+.ng-enter.ng-enter-active {
+  opacity:1;
+}
+.ng-enter-stagger {
+  /* this will have a 100ms delay between each successive leave animation */
+  transition-delay: 5s;
 
-//.ng-hide-add { animation:0.5s fadeOutDown ease; }
-.ng-hide-remove { animation:0.5s fadeInUp ease; }
+  /* in case the stagger doesn't work then the duration value
+   must be set to 0 to avoid an accidental CSS inheritance */
+  transition-duration: 0s;
+}
+.ng-leave {
+  opacity:1;
+}
+.ng-leave.ng-leave-active {
+  opacity:0;
+}
 
 /* b Preloader Box */
 .b-preloader-box{

@@ -33,6 +33,10 @@ function theme_enqueue_scripts(){
     wp_register_script('angular-sanitize', get_bloginfo('template_url') . '/lib/angular-sanitize/angular-sanitize.min.js', null, false, true);
     wp_enqueue_script('angular-sanitize');
 
+    wp_register_script('angular-loading-bar', get_bloginfo('template_url') . '/lib/angular-loading-bar/build/loading-bar.min.js', null, false, true);
+    wp_enqueue_script('angular-loading-bar');
+
+
 
 	wp_register_script('main', get_bloginfo('template_url') . '/js/main.js', array('jquery'), false, true);
 	wp_enqueue_script('main');

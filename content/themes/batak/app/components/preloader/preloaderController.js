@@ -1,6 +1,6 @@
 angular.module('batakApp')
-    .controller('appCtrl', [ '$scope', 'Preloader', appController]);
+    .controller('appCtrl', [ '$scope', appController]);
 
-function appController($scope, Preloader) {
-    $scope.preloading = Preloader.toPreload;
+function appController($scope) {
+
 }
