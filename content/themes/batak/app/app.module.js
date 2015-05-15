@@ -22,6 +22,7 @@ var app = angular.module('batakApp', ['angular-loading-bar', 'ngAnimate', 'ui.ro
 // promise-chain.
 app.config(
     function simulateNetworkLatency($httpProvider) {
+        return;
 
         $httpProvider.interceptors.push(httpDelay);
 
