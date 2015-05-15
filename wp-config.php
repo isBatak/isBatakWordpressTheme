@@ -21,16 +21,16 @@ if (file_exists(dirname(__FILE__) . '/local-config.php')) {
 
 // Global DB config
 if (!defined('DB_NAME')) {
-	define('DB_NAME', 'u697572513_batak');
+	define('DB_NAME', 'a1135240_batak');
 }
 if (!defined('DB_USER')) {
-	define('DB_USER', 'u697572513_busr');
+	define('DB_USER', 'a1135240_batuserr');
 }
 if (!defined('DB_PASSWORD')) {
 	define('DB_PASSWORD', 'mars3600');
 }
 if (!defined('DB_HOST')) {
-	define('DB_HOST', 'mysql.5freehosting.com');
+	define('DB_HOST', 'mysql10.000webhost.com');
 }
 
 /** Database Charset to use in creating database tables. */
