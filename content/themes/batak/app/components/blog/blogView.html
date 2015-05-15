@@ -3,7 +3,7 @@
 <section class="b-masonry">
     <article class="b-panel item" ng-repeat="post in posts">
         <div class="view">
-            <img src="{{ post.featured_image.source }}" alt="{{ post.featured_image.title }}" />
+            <img ng-src="{{ post.featured_image.source }}" alt="{{ post.featured_image.title }}" />
             <div class="view-overlay">
                 <div class="outer">
                     <div class="inner">
@@ -20,7 +20,7 @@
         <div class="b-panel-footer">
             <span class="b-panel-autor-img">
                 <a href="#">
-                    <img src="{{ post.author.avatar }}" alt="{{ post.author.nickname }}" class="img-circle" width="50" height="50">
+                    <img ng-src="{{ post.author.avatar }}" alt="{{ post.author.nickname }}" class="img-circle" width="50" height="50">
                 </a>
             </span>
             <span class="b-panel-tags">
