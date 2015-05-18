@@ -7703,7 +7703,7 @@ article .b-article-panel {
   color: #232323;
 }
 
-.b-masonry {
+.b-masonary {
   -webkit-column-count: 3;
      -moz-column-count: 3;
           column-count: 3;
@@ -7711,7 +7711,7 @@ article .b-article-panel {
      -moz-column-gap: 30px;
           column-gap: 30px;
 }
-.b-masonry .item {
+.b-masonary .item {
   display: inline-block;
   box-sizing: border-box;
   margin: 0 0 30px;
@@ -7723,14 +7723,14 @@ article .b-article-panel {
   break-inside: avoid;
 }
 @media (max-width: 992px) {
-  .b-masonry {
+  .b-masonary {
     -webkit-column-count: 2;
        -moz-column-count: 2;
             column-count: 2;
   }
 }
 @media (max-width: 480px) {
-  .b-masonry {
+  .b-masonary {
     -webkit-column-count: 1;
        -moz-column-count: 1;
             column-count: 1;
@@ -7761,34 +7761,42 @@ article .b-article-panel {
   height: 100%;
 }
 
-.ng-animate {
+.b-main-content {
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+.b-main-content.ng-enter .page-animation {
+  -webkit-animation: 0.5s fadeInUp ease;
+          animation: 0.5s fadeInUp ease;
+}
+.b-main-content.ng-leave .page-animation {
+  -webkit-animation: 0.5s fadeOutDown ease;
+          animation: 0.5s fadeOutDown ease;
+}
+
+.repeater.ng-enter-stagger, .repeater.ng-move-stagger, .repeater.ng-leave-stagger {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+  -webkit-transition-duration: 0;
+          transition-duration: 0;
+}
+.repeater.ng-enter, .repeater.ng-move {
   -webkit-transition: 0.5s linear all;
           transition: 0.5s linear all;
-}
-
-.ng-enter {
   opacity: 0;
+  -webkit-transform: scale(1.15) !important;
+      -ms-transform: scale(1.15) !important;
+          transform: scale(1.15) !important;
 }
-
-.ng-enter.ng-enter-active {
+.repeater.ng-enter.ng-enter-active, .repeater.ng-enter.ng-move-active, .repeater.ng-move.ng-enter-active, .repeater.ng-move.ng-move-active {
   opacity: 1;
 }
-
-.ng-enter-stagger {
-  /* this will have a 100ms delay between each successive leave animation */
-  -webkit-transition-delay: 5s;
-          transition-delay: 5s;
-  /* in case the stagger doesn't work then the duration value
-   must be set to 0 to avoid an accidental CSS inheritance */
-  -webkit-transition-duration: 0s;
-          transition-duration: 0s;
+.repeater.ng-leave {
+  -webkit-transition: 0.5s linear all;
+          transition: 0.5s linear all;
+  opaciti: 1;
 }
-
-.ng-leave {
-  opacity: 1;
-}
-
-.ng-leave.ng-leave-active {
+.repeater.ng-leave.ng-leave-active {
   opacity: 0;
 }
 
