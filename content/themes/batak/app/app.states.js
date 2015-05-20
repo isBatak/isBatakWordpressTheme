@@ -14,6 +14,16 @@ angular.module('batakApp')
                 resolve: {
                     loadPosts: 'LoadPostsService'
                 }
+            })
+            .state('single', {
+                url: 'blog/{slug}',
+                templateUrl: wp_global.template_directory_uri + '/app/components/single/singleView.html',
+                controller: 'SingleController',
+                resolve: {
+                    loadPost: function(LoadSinglePostService, $stateParams){
+                        return LoadSinglePostService.getPost($stateParams.slug);
+                    }
+                }
             });
 
         $urlRouterProvider.otherwise('/');

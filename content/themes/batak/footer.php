@@ -9,6 +9,8 @@
         <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/app/components/home/homeService.js"></script>
         <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/app/components/blog/blogController.js"></script>
         <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/app/components/blog/blogService.js"></script>
+        <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/app/components/single/singleController.js"></script>
+        <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/app/components/single/singleService.js"></script>
 
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

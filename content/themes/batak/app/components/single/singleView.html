@@ -1,0 +1,73 @@
+<div class="b-content-with-sidebar">
+
+    <article>
+        <img ng-src="{{ post.featured_image.source }}" alt="{{ post.featured_image.title }}" class="img-responsive" />
+
+        <div class="b-article-content">
+            <div class="b-article-panel">
+                <h1>{{ post.title }}</h1>
+                <div class="b-article-by">
+                <span class="b-panel-autor-img">
+                    <a href="#">
+                        <img ng-src="{{ post.author.avatar }}" alt="{{ post.author.nickname }}" class="img-circle" width="80" height="80">
+                        {{ post.author.nickname }}
+                    </a>
+                </span>
+                <span class="b-article-by-item">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                    April 25, 2015
+                </span>
+                <span class="b-article-by-item">
+                    <a href="#">
+                        <span class="glyphicon glyphicon-comment"></span>
+                        16
+                    </a>
+                </span>
+                <span class="b-article-by-item">
+                    <span class="glyphicon glyphicon-tags"></span>
+                    juice, freebies, drink
+                </span>
+                </div>
+                <div class="action-buttons text-center">
+                    <div class="btn-group btn-group-lg">
+                        <a class="btn btn-lg btn-primary" href="#">
+                            <span class="fa fa-code"></span> VIEW CODE
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="b-article-panel" ng-bind-html="post.content">
+
+            </div>
+
+            <!--
+            <div class="b-article-panel">
+                <div class="yarpp-related">
+                    <div class="further-reading text-center">
+                        <h3>Read Next</h3>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <section class="b-panel-title">
+                                    <a href="#">
+                                        <img width="600" height="250" src="images/user.jpg" class="img-responsive wp-post-image" alt="Sed ne, dum huic obsequor, vobis molestus sim.">
+                                        Sed ne, dum huic obsequor, vobis molestus sim.
+                                    </a>
+                                </section>
+                            </div>
+                            <div class="col-sm-6">
+                                <section class="b-panel-title">
+                                    <a href="#">
+                                        <img width="600" height="250" src="images/orange.jpg" class="img-responsive wp-post-image" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                    </a>
+                                </section>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>-->
+        </div>
+    </article>
+
+</div>

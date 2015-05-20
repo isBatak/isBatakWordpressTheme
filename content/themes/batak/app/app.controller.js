@@ -3,8 +3,6 @@ angular.module('batakApp')
 
 function appController($scope, $state, $rootScope, Preload) {
 
-    console.log($state);
-
     $rootScope
         .$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
             //alert('success');

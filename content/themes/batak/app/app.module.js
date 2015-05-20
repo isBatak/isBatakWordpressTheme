@@ -4,7 +4,10 @@ var app = angular.module('batakApp', ['angular-loading-bar', 'ngAnimate', 'ui.ro
     .config(['$locationProvider', function($locationProvider) {
         // check if browser supports history API
         if(window.history && window.history.pushState){
-            $locationProvider.html5Mode(true).hashPrefix('!');
+            $locationProvider.html5Mode({
+                enabled : true,
+                requireBase: false
+            }).hashPrefix('!');
         }
     }])
     .factory('Preload', function() {
