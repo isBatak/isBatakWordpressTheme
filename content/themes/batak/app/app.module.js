@@ -1,7 +1,7 @@
 "use strict";
 
 var app = angular.module('batakApp', ['angular-loading-bar', 'ngAnimate', 'ui.router', 'ngSanitize'])
-    .config(['$locationProvider', function($locationProvider) {
+    .config(['$locationProvider', '$compileProvider', function($locationProvider, $compileProvider) {
         // check if browser supports history API
         if(window.history && window.history.pushState){
             $locationProvider.html5Mode({
@@ -9,6 +9,8 @@ var app = angular.module('batakApp', ['angular-loading-bar', 'ngAnimate', 'ui.ro
                 requireBase: false
             }).hashPrefix('!');
         }
+
+        $compileProvider.debugInfoEnabled(true);
     }])
     .factory('Preload', function() {
         return {
