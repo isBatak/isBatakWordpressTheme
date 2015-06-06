@@ -82,6 +82,21 @@ function register_widgets(){
 }//end register_widgets()
 add_action( 'widgets_init', 'register_widgets' );
 
+
+
+add_action( 'after_setup_theme', 'baw_theme_setup' );
+function baw_theme_setup() {
+    add_image_size( 'single-post', 1200, 500 );
+}
+
+add_filter( 'image_size_names_choose', 'my_custom_sizes' );
+function my_custom_sizes( $sizes ) {
+    return array_merge( $sizes, array(
+        'single-post' => __( 'Single Post Image Size' ),
+    ) );
+}
+
+
 define( 'BATAK_PARENT_DIR', get_template_directory() );
 define( 'BATAK_INC_DIR', BATAK_PARENT_DIR. '/inc' );
 define( 'BATAK_FUNCTIONS_DIR', BATAK_INC_DIR . '/functions' );

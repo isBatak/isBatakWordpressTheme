@@ -1,0 +1,1081 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ecf4af5d-6057-4c29-97f9-69df5e857e5e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../cms" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vagrant.xml" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\.yeopress" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\cms" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\index.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\plugins\hello.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\plugins\index.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\plugins\json-rest-api\CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\plugins\json-rest-api\CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\plugins\json-rest-api\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\plugins\json-rest-api\docs\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\plugins\json-rest-api\docs\routes\routes.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\plugins\json-rest-api\lib\class-jsonserializable.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\plugins\json-rest-api\lib\class-wp-json-comments.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\plugins\json-rest-api\lib\class-wp-json-customposttype.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\plugins\json-rest-api\lib\class-wp-json-datetime.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\plugins\json-rest-api\lib\class-wp-json-media.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\plugins\json-rest-api\lib\class-wp-json-meta-posts.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\plugins\json-rest-api\lib\class-wp-json-meta.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\plugins\json-rest-api\lib\class-wp-json-pages.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\plugins\json-rest-api\lib\class-wp-json-posts.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\plugins\json-rest-api\lib\class-wp-json-response.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\plugins\json-rest-api\lib\class-wp-json-responsehandler.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\plugins\json-rest-api\lib\class-wp-json-responseinterface.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\plugins\json-rest-api\lib\class-wp-json-server.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\plugins\json-rest-api\lib\class-wp-json-taxonomies.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\plugins\json-rest-api\lib\class-wp-json-users.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\plugins\json-rest-api\lib\wp-json.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\plugins\json-rest-api\license.txt" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\plugins\json-rest-api\plugin.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\plugins\json-rest-api\readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\plugins\json-rest-api\wp-api.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\.bowerrc" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\app\app.controller.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\app\app.module.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\app\app.states.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\app\components\blog\blogController.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\app\components\blog\blogService.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\app\components\blog\blogView.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\app\components\home\homeController.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\app\components\home\homeService.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\app\components\home\homeView.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\app\components\preloader\preloaderController.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\app\components\preloader\preloaderService.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\app\components\preloader\preloaderView.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\app\components\single\singleController.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\app\components\single\singleService.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\app\components\single\singleView.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\app\shared\article\articleDirective.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\app\shared\article\articleView.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\app\shared\footer\footerDirective.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\app\shared\footer\footerView.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\app\shared\preloader\preloaderDirective.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\app\shared\preloader\preloaderView.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\app\shared\sidebar\sidebarDirective.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\app\shared\sidebar\sidebarView.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\component.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\css\.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\css\global.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\css\global.css.map" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\css\prism.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\css\prism.css.map" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\design\batak.aco" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\design\font\champagne_limousines.zip" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\design\font\ubuntu-font-family-0.80.zip" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\design\patterns\shattered.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\design\patterns\shattered_@2X.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\design\patterns\skulls.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\design\preloader.psd" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\design\template.psd" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\fonts\glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\fonts\glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\fonts\glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\footer.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\functions.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\header.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\404.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\about.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\blog-horizontal.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\blog-masonary-vertical.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\blog-single-sidebar.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\blog-vertical.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\contact.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\images\1200x500.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\images\600x250.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\images\700x400.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\images\avatar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\images\logo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\images\orange.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\images\pc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\images\profile_picture.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\images\user.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\index.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\js\script.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\masonary.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\miscellaneous.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\pages\404.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\pages\about.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\pages\blog-horizontal.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\pages\blog-masonary-vertical.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\pages\blog-single-sidebar.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\pages\blog-vertical.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\pages\contact.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\pages\index.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\pages\miscellaneous.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\pages\preloader.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\pages\typography.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\partials\404.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\partials\about\content.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\partials\blog\content\single_content.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\partials\blog\content\vertical_one_col_content.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\partials\blog\content\vertical_three_col_content.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\partials\blog\single_with_sidebar.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\partials\blog\vertical_one_col.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\partials\blog\vertical_three_col.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\partials\bootstrap\buttons.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\partials\bootstrap\containers.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\partials\bootstrap\dialogs.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\partials\bootstrap\forms.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\partials\bootstrap\indicators.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\partials\bootstrap\navbars.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\partials\bootstrap\navs.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\partials\bootstrap\progress_bars.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\partials\bootstrap\tables.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\partials\bootstrap\typography.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\partials\footer.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\partials\footer\advertise.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\partials\footer\copyright.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\partials\footer\hireme.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\partials\footer\links.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\partials\footer\newsletter.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\partials\mobile_header.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\partials\pagination.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\partials\search_bar.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\partials\search_modal.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\partials\side_menu.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\partials\sidebar\sidebar.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\preloader.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\style.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\templates\default.dot.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\html_template\typography.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\images\.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\images\apple-touch-icon-precomposed.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\images\black_lozenge.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\images\black_lozenge_@2X.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\images\favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\images\favicon.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\images\logo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\images\preloader.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\images\profile_picture.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\inc\functions\functions.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\index.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\index_old.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\index_old_ng.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\js\main.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\js\modernizr.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\js\plugins\masonry.pkgd.min.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\old_404.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\package.json" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\partials\footer.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\partials\nav.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\partials\signature.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\screenshot.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\scss\_angular.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\scss\_b_404.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\scss\_b_articles.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\scss\_b_footer.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\scss\_b_layout.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\scss\_b_masonary.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\scss\_b_navbar.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\scss\_b_panels.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\scss\_b_preloader.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\scss\_b_profile.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\scss\_b_searchbar.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\scss\_b_sidemenu.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\scss\_b_social.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\scss\_bootswatch.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\scss\_browserupgrade.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\scss\_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\scss\_ng_loading_bar.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\scss\_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\scss\_wrappers.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\scss\global.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\scss\mixins\_b_panel.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\scss\mixins\_clearfix.ext.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\scss\mixins\_wordpress.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\scss\prism.scss" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\style.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\templates\portfolio.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\views\demo.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\batak\views\main.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\index.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\404.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\archive.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\author-bio.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\comments.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\content-link.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\content-none.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\content-page.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\content-search.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\content.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\css\editor-style.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\css\ie.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\css\ie7.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\footer.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\functions.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\genericons\COPYING.txt" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\genericons\Genericons.eot" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\genericons\Genericons.svg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\genericons\Genericons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\genericons\Genericons.woff" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\genericons\LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\genericons\README.md" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\genericons\example.html" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\genericons\genericons.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\header.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\image.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\inc\back-compat.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\inc\custom-header.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\inc\customizer.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\inc\template-tags.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\index.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\js\color-scheme-control.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\js\customize-preview.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\js\functions.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\js\html5.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\js\keyboard-image-navigation.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\js\skip-link-focus-fix.js" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\languages\twentyfifteen.pot" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\page.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\rtl.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\screenshot.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\search.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\sidebar.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\single.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\content\themes\twentyfifteen\style.css" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\index.php" afterPath="" />
+      <change type="DELETED" beforePath="E:\Programiranje\WP_Projects\isBatakWordpressTheme\wp-config.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.gitignore" afterPath="$PROJECT_DIR$/../../../../.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../.gitmodules" afterPath="$PROJECT_DIR$/../../../../.gitmodules" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../db_dump/batak.sql" afterPath="$PROJECT_DIR$/../../../../db_dump/batak.sql" />
+    </list>
+    <ignored path="batak.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="batak" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/../../../../Vagrantfile" />
+        <option value="$PROJECT_DIR$/bower.json" />
+        <option value="$PROJECT_DIR$/functions.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsGruntFileManager">
+    <gruntfiles>
+      <GruntfileState>
+        <alias-tasks>
+          <alias-task value="default" />
+        </alias-tasks>
+        <multi-tasks>
+          <GruntMultiTaskState>
+            <name>autoprefixer</name>
+            <targets>
+              <target value="files" />
+            </targets>
+          </GruntMultiTaskState>
+          <GruntMultiTaskState>
+            <name>bower</name>
+            <targets>
+              <target value="all" />
+            </targets>
+          </GruntMultiTaskState>
+          <GruntMultiTaskState>
+            <name>bowerRequirejs</name>
+          </GruntMultiTaskState>
+          <GruntMultiTaskState>
+            <name>build</name>
+          </GruntMultiTaskState>
+          <GruntMultiTaskState>
+            <name>concat</name>
+          </GruntMultiTaskState>
+          <GruntMultiTaskState>
+            <name>debug</name>
+          </GruntMultiTaskState>
+          <GruntMultiTaskState>
+            <name>imagemin</name>
+            <targets>
+              <target value="production" />
+            </targets>
+          </GruntMultiTaskState>
+          <GruntMultiTaskState>
+            <name>jshint</name>
+            <targets>
+              <target value="all" />
+            </targets>
+          </GruntMultiTaskState>
+          <GruntMultiTaskState>
+            <name>requirejs</name>
+            <targets>
+              <target value="production" />
+            </targets>
+          </GruntMultiTaskState>
+          <GruntMultiTaskState>
+            <name>sass</name>
+            <targets>
+              <target value="production" />
+              <target value="dev" />
+            </targets>
+          </GruntMultiTaskState>
+          <GruntMultiTaskState>
+            <name>setup</name>
+          </GruntMultiTaskState>
+          <GruntMultiTaskState>
+            <name>stencil</name>
+            <targets>
+              <target value="main" />
+            </targets>
+          </GruntMultiTaskState>
+          <GruntMultiTaskState>
+            <name>svgmin</name>
+            <targets>
+              <target value="production" />
+            </targets>
+          </GruntMultiTaskState>
+          <GruntMultiTaskState>
+            <name>watch</name>
+            <targets>
+              <target value="sass" />
+              <target value="js" />
+              <target value="php" />
+              <target value="html" />
+              <target value="css" />
+              <target value="dot" />
+            </targets>
+          </GruntMultiTaskState>
+          <GruntMultiTaskState>
+            <name>wiredep</name>
+            <targets>
+              <target value="task" />
+            </targets>
+          </GruntMultiTaskState>
+        </multi-tasks>
+        <gruntfile-path>$PROJECT_DIR$/Gruntfile.js</gruntfile-path>
+      </GruntfileState>
+    </gruntfiles>
+    <initial>false</initial>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpDebugGeneral" xdebug_force_break_when_no_path_mapping="false" xdebug_force_break_when_outside_project="false" />
+  <component name="PhpServers">
+    <servers>
+      <server host="batak.dev" name="batak-hostname" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$" remote-root="/var/www/public_html/public/content/themes/batak" />
+          <mapping local-root="$PROJECT_DIR$/../../../cms" remote-root="/var/www/public_html/public/cms" />
+        </path_mappings>
+      </server>
+    </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
+    <include_path>
+      <path value="$PROJECT_DIR$/../../../cms" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1176" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="Undo Check Out" />
+    <OptionsSetting value="true" id="Get Latest Version" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="batak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="batak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="batak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="batak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="batak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="batak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="batak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angularjs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="batak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="batak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular-ui-router" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="batak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="batak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="options.lastSelected" value="settings.github" />
+    <property name="options.splitter.main.proportions" value="0.13672769" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="recentsLimit" value="5" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="FullScreen" value="false" />
+  </component>
+  <component name="PsiViewer.ProjectComponent">
+    <option name="HIGHLIGHT" value="false" />
+    <option name="FILTER_WHITESPACE" value="false" />
+    <option name="SHOW_PROPERTIES" value="true" />
+    <option name="SPLIT_DIVIDER_POSITION" value="300" />
+    <option name="AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="AUTOSCROLL_FROM_SOURCE" value="false" />
+  </component>
+  <component name="RunManager" selected="PHP Web Application.Run/Debug">
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Run/Debug" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" browser="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" server_name="batak-hostname">
+      <RunnerSettings RunnerId="PhpWebAppDebugRunner" />
+      <ConfigurationWrapper RunnerId="PhpWebAppDebugRunner" />
+      <method>
+        <option name="ToolBeforeRunTask" enabled="true" actionId="Tool_External Tools_vagrant" />
+      </method>
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="PHP Web Application.Run/Debug" />
+    </list>
+    <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ecf4af5d-6057-4c29-97f9-69df5e857e5e" name="Default" comment="" />
+      <created>1433508245541</created>
+      <option name="number" value="Default" />
+      <updated>1433508245541</updated>
+      <workItem from="1433508256725" duration="1541000" />
+      <workItem from="1433515348895" duration="9030000" />
+      <workItem from="1433584078970" duration="1539000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="12110000" />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3291866" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291866" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291866" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="PsiViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291866" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291866" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33014354" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291866" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20095694" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="WordPressConfiguration" enabled="true">
+    <wordpressPath>E:\Programiranje\WP_Projects\isBatakWordpressTheme\cms</wordpressPath>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1887">
+          <caret line="23" column="78" selection-start-line="23" selection-start-column="78" selection-end-line="23" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1887">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Vagrantfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53125" vertical-offset="255" max-vertical-offset="1666">
+          <caret line="36" column="56" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../bootstrap.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1513">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/prism/components/prism-actionscript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+          <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/prism/components/prism-applescript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+          <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34621328" vertical-offset="2955" max-vertical-offset="15147">
+          <caret line="187" column="3" selection-start-line="187" selection-start-column="3" selection-end-line="187" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../cms/wp-includes/script-loader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34700316" vertical-offset="15913" max-vertical-offset="18292">
+          <caret line="969" column="4" selection-start-line="969" selection-start-column="4" selection-end-line="969" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="673">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="673">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/angular/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1190">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/angular/angular.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="447338">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="672">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/angularjs/angular.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="478346">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="672">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/angular-ui-router/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="672">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/angular-ui-router/CHANGELOG.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3978">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5" vertical-offset="0" max-vertical-offset="646">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.59336823" vertical-offset="0" max-vertical-offset="573">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41535777" vertical-offset="153" max-vertical-offset="1887">
+          <caret line="23" column="78" selection-start-line="23" selection-start-column="78" selection-end-line="23" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>Haxe 3.2.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>batak</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>Haxe 3.2.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>batak node_modules</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
